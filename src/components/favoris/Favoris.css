@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
+.favoris-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    height: 93vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+
+
+.block-hero-favoris {
+    
+    
+    border: 1px #1492c01a solid;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.137) ;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.hero-favoris {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;    
+    /* padding-block: 1vw; */
+    padding: 10px;
+    background: #00000005;
+    /* background: rebeccapurple; */
+    min-width: calc(300px + 8vw);
+    max-width: 50vw;
+    
+    height: fit-content;
+    min-height: 20vh ;
+    max-height: 75vh;
+}
+
+
+
+.block-hero-favoris > h1 {
+    font-family: "inter" ,serif;
+    color: rgba(0, 0, 0, 0.247);
+    text-shadow: 1px 1px 1px rgba(100, 100, 218, 0.445);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    /* background: #a74040; */
+}
+
+.favoris-container .block1 {
+    display: flex;
+    flex-direction: column;
+    height: 20vw;
+    /* background: #ad3535; */
+    align-items: center;
+    justify-content: center;
+}
+
+.favoris-container> .block1 > .p1,.p2 {
+    background: #00000000;
+}
+
+.favoris-container> .block1 > .p1 {
+    background: #00000000;
+    color: #0D7468 ;
+    font-family: "comic neue" ,serif;
+    font-size: 30px;
+}
+
+.favoris-container> .block1 > .p2 {
+    background: #00000000;
+    color: rgba(0, 0, 0, 0.411);
+    font-family: "cookie", serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+
+.item-fav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    border-radius: 3px;
+    height: 200px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.likeIcon {
+    width: 16px;
+    height: 15px;
+}
+.likeIcon:hover {
+    cursor: pointer;
+    width: 16px;
+    height: 15px;
+}
+
+.addIcon {
+    width: 20px;
+}
+.addIcon:hover {
+
+    cursor: pointer;
+}
+
+.item-fav > .b1,.b2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+.item-fav > .b1{
+   align-items: start;
+   height: fit-content;
+}
+
+.item-fav h3 {
+    color: rgb(4, 38, 133);
+    font-family: "inter";
+    font-size: 16px;
+}
+
+@media (max-width:999px) {
+    .favoris-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        padding-bottom: 30px;
+        gap: 0px ;
+        /* background: #d18d8d; */
+        height: fit-content;
+        box-sizing: border-box;
+
+        
+    }
+
+    .favoris-container > .block-hero-favoris{
+        /* background: #ca2d2d; */
+        height: fit-content;
+        width:90%;
+    }
+    .favoris-container > .block1 {
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        width: 90%;
+        padding-top: 0px;
+        padding-bottom: 20px;
+         height: fit-content;
+    }
+
+    .favoris-container > .block1 > .p2 {
+        width: 90%;
+    }
+    .favoris-container > .block1 > .p1 {
+        width: 90%;
+    }
+
+
+
+    .hero-favoris {
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        flex-wrap: wrap;
+
+        overflow-x: hidden;    
+        padding: 0px;
+        background: #00000005;
+        height: fit-content;
+        max-width: none;
+        /* background: #51ce1f; */
+        max-height: 75vh;
+        
+        padding: 10px;
+    }
+}

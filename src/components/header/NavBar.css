@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.navbar  {
+    position: sticky;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 7vh;
+    z-index: 10000;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat" ,serif;
+    backdrop-filter: blur(10px);
+    top: 0px;
+   
+    
+}
+
+.item-nav, .accueil {
+    font-family: "Montserrat" ,serif;
+    font-weight: 500 ;
+    color: rgba(0, 0, 0, 0.60);
+
+}
+
+
+.item-nav {
+    text-decoration: none;
+    
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    /* gap: 25px; */
+   gap: 1.5vw;
+
+    /* background: #746b6b; */
+}
+
+.accueil {
+    text-decoration: none;
+    animation: show;
+    animation-duration:  2s;
+    animation-delay: 1s ;
+    font-size: clamp(12px,0.8vw,15px);
+
+}
+
+.navbar li {
+    list-style: none;
+    cursor: pointer;
+    font-size: clamp(12px,0.8vw,15px);
+    /* font-size: 0.8vw; */
+    animation: show;
+    animation-duration:  2s;
+    animation-delay: 1s ;
+    /* text-shadow: 1px 1px 1px rgb(0, 0, 0); */
+}
+
+.navbar li:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.navbar li:active {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+
+
+.logo {
+    position: absolute;
+    height: 40px;
+    left: 0;
+    margin-left: 10px;
+
+    animation: show;
+    animation-duration:  2s;
+    animation-delay: 1s ;
+}
+
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+
+
+.iconNav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    right: 20px;
+    /* background: #852d2d; */
+    animation: show;
+    animation-duration:  2s;
+    animation-delay: 1s ;
+}
+
+
+.iconNavItem {
+    cursor: pointer;
+    font-size: clamp(15px,0.8vw,20px);
+    
+    color: rgba(0, 0, 0, 0.26);
+
+}
+
+.icon-prodnumber {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.product-number {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    color: rgb(226, 39, 39);
+    /* background: rgba(18, 8, 160, 0.644); */
+    font-weight: 500;
+    position: absolute;
+    right: -7px;
+    top: -18px;
+    font-size: 13px;
+    
+}
+
+.iconNavItem:hover {
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+.menu {
+    display: none;
+}
+
+.search-container-mobile {
+    display: none;
+}
+
+.menu-content {
+    display: none;
+}
+
+.x-Icon {
+        display: none;
+        width: 25px;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 1000px) {
+
+  
+    .navbar {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        background: #0f0303c2;
+        height: 70px;
+        block-size: border;
+        padding-right: 20px ;
+        /* overflow-x: hidden; */
+        z-index: 1000;
+    }
+
+    .menu-mobile {
+        position: fixed;
+        opacity: 0;
+        transform: translateX(-200%);
+        transition: 0.7s;
+    }
+
+    .menu-mobile.ouvert {
+       
+        opacity: 1;
+        transform: translateX(0px);
+        z-index: 100;
+        transition: 0.5s;
+    }
+
+    .iconNav {
+        position: absolute;
+        width: 100px;
+        color: rgb(223, 22, 22);
+        /* background: red; */
+        position: absolute;
+       
+        right: calc(100vw - 110px);
+    }
+
+
+    .iconNav .iconNavItem {
+        width: 30px;
+        font-size: 20px;
+        height: auto;
+        color: white;
+    }
+
+    .navbar ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed ;
+        top : 0px;
+        right: 0px;
+        background: rgba(0, 0, 0, 0.767);
+        backdrop-filter: blur(10px);
+        height: 100vh;
+        width: 40vw;
+        padding: 20px;
+        gap: 3vh;
+
+    }
+
+
+    .navbar li a {
+        text-align: right;
+        /* color: aquamarine; */
+
+    }
+
+
+    .item-nav, .accueil {
+        /* background: violet; */
+        text-align:right;
+        font-size: 15px ;
+        color: rgb(255, 255, 255);
+    }
+
+
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        display: flex;
+        
+    }
+
+    .x-Icon {
+        display: flex;
+        width: 25px;
+        position: absolute;
+        top: 30px;
+        right: 25px ;
+    }
+    
+    .menu-Icon {
+        
+        width: 30px;
+        height: 25px;
+    }
+
+
+
+}

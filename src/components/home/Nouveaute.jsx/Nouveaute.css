@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
+.nouveaute {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    /* background: #bb6868; */
+}
+
+.nouveaute .titre {
+    margin-bottom: 2%;
+}
+
+.nouveaute .titre h1 {
+    font-family: 'Bad Script', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 0.5%;
+}
+
+.titre p {
+    font-family: 'Inter', serif;
+    font-size: 15px;
+}
+
+.container-nouveaute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    /* background: #da9a9a; */
+}
+
+.titre {
+    font-family: "Bad Script", serif;
+    width: 100%;
+}
+
+.hero , .hero-content {
+    display: flex;
+    /* gap: 100px; */
+    gap: 5vw;
+}
+
+.produit {
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 200px ;
+    max-width: 300px;
+    max-height: 400px;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25) ;
+    
+
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+
+
+.produit1 {
+    background-image: url('../../../assets/produit\ img/new1.png'); ;
+   
+}
+.produit1:hover {
+   width: 350px;
+    transition: 0.5s;
+}
+
+.produit2 {
+    max-width: 350px;
+    width: 17vw;
+    background-image: url('../../../assets/produit\ img/new2.png');
+}
+.produit2:hover{
+    width: 375px;
+    transition: 0.5s;
+    background-image: url('../../../assets/produit\ img/new2.png');
+}
+
+
+.produit3 {
+    background-image: url('../../../assets/produit\ img/new3.png');
+    
+}
+
+
+.produit3:hover {
+    width: 350px;
+    transition: 0.5s;
+    
+}
+
+
+.boutonNouveau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 100px;
+    max-height: 30px;
+    width: fit-content;
+    
+    font-size: clamp(10px,0.6vw,12px) ;
+    /* font-size: 10px ; */
+    background: #181845;
+    font-family: "Montserrat" ,serif;
+    margin: 5px;
+}
+
+.boutonNouveau:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #086e8d;
+    transition: 0.5s;
+}
+
+.angle {
+    visibility: hidden;
+}
+
+
+
+
+@media (max-width : 768px) {
+
+    
+
+    .hero-content {
+        display: flex;
+        gap: 20vw;
+        width: fit-content;
+        /* background: #121ec4; */
+        padding: 10px;
+    }
+
+    .hero {
+        display: flex;
+        
+        
+        /* background: red; */
+        width: 60vw;
+        overflow-x: scroll;
+
+    }
+
+    .produit {
+        width: 500px;
+    }
+
+    .hero-section-new {
+        display: flex;
+        align-items: center;
+    }
+
+    .angle {
+        visibility: visible ;
+        font-size: 35px;
+    }
+
+}

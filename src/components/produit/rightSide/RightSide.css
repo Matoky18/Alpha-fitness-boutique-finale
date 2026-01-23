@@ -1,0 +1,91 @@
+.right-side-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "inter" ,serif;
+    position: fixed;
+    background: #f0f0f04b;
+    
+    justify-content: space-between;
+    right: 0px;
+    height: 93vh;
+    
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
+    width: 150px;
+   
+   
+
+}
+
+
+
+.block1 {
+    overflow-y: scroll;
+    height: 85vh;
+    padding-bottom: 6vh;
+}
+
+
+.Bouton-right-side {
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+    width: 150px;
+    border: 0px;
+    height: 50px;
+    gap: 10px;
+    border-radius: 0px;
+    font-weight: bold;
+    background: rgb(4, 29, 87);
+    color: white;
+
+}
+
+.Bouton-right-side:hover {
+    cursor: pointer;
+    background: rgb(2, 48, 139);
+    transition: 0.2s;
+}
+
+
+.montant-total {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    color: rgba(7, 34, 107, 0.822);
+    font-weight: 700;
+}
+
+
+
+.montant-total .prix {
+    
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255, 6, 6, 0.671);
+}
+ 
+.trash-icon {
+    color: rgb(0, 0, 0);
+}
+
+.panierIcon {
+    width: 20px;
+    
+} 
+
+.produit-ensemble {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:1150px) {
+
+    .right-side-container {
+        display: none;
+    }
+}

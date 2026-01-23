@@ -1,0 +1,13 @@
+.inputText {
+    border-radius: 20px;
+    border: solid 1px rgb(32, 58, 177);
+    background: #ffffff62;
+}
+
+.inputLogin {
+    height: 45px;
+    width: 375px;
+    margin-top: 10px;
+
+}
+

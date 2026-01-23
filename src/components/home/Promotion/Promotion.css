@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+
+.promotion-container h1 {
+    font-family: "Euphoria Script" ,serif;
+    font-size: clamp(60px,6vw,100px) ;
+}
+
+.promotion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 5vh ;
+
+}
+
+.promo-hero  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.all-promo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 5vw;
+    width: calc(20px + 15vw + 60vw);
+    height: fit-content;
+    overflow-x: scroll;
+    gap: 5vw;
+}
+
+
+.one-promo {
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+}
+
+
+.image1-item , .image2-item {
+    border-radius: 20px;
+
+}
+
+
+.image1-item {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 20vw;
+    min-width: 170px;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+
+.image2-item {
+    width: 50vw;
+    min-width: 300px;
+
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bouton-promo {
+    margin: 5px;
+    width: 90px;
+    height: 30px;
+    color: aliceblue;
+
+    background: #3b0a15;
+}
+
+.phrase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.next , .prev {
+    width: 20px;
+}
+
+
+.next:hover , .prev:hover {
+    cursor: pointer;
+}
+
+.phrase > h4 {
+    font-family: "Montserrat" ;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+@media (max-width:768px) {
+
+    .promotion-container h1 {
+        font-family: "Euphoria Script" ,serif;
+        font-size: clamp(35px,12vw,60px) ;
+        
+    }
+
+
+    .image1-item , .image2-item {
+        height: 400px;
+    }
+
+    .image1-item {
+        width: 65vw;
+        min-width: 100px;
+
+    }
+
+    .image2-item {
+        display: none;
+    }
+
+    .next , .prev {
+        display: none;
+    }
+
+    .chiffre-promo {
+        color: red;
+    }
+  
+    .all-promo {
+        display: flex;
+        gap: 20px ;
+        width: 80vw;
+    }
+
+
+}

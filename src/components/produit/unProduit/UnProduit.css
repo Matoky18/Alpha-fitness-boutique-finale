@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Farsan&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.UnProduit-container {  
+    
+    font-family: "Inter" , serif;
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.096);
+    
+
+}
+
+
+.imageProduit:hover {
+    cursor: pointer;
+    /* transform: scale(1.05); */
+    transition: 0.5s;
+}
+
+.details-Produit {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 500%;
+       
+    /* background: #bb6060;     */
+}
+
+
+
+.prix {
+    font-style: italic;
+}
+
+.nom-produit {
+    color: rgb(42, 184, 219);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.details {
+    font-size: 14px;
+}
+
+.imageProduit {
+    
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.like {
+  width: 20px;
+
+}
+
+.like-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.like:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.produit-element > .bottom-block-produit {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* background: rgb(231, 141, 24); */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+}
+
+.produit-element {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    /* background: blue; */
+}
+
+a {
+    text-decoration: none;
+    
+}

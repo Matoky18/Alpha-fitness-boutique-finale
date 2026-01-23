@@ -1,0 +1,131 @@
+.hero-populaire {
+    display: flex;
+    width: 98%;
+    gap: 1%;
+    padding: 1%;
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.247);
+}
+
+.left-side  {
+    
+    width: 55vw;
+    height: 100vh;
+    background-image: url('../../../assets/produit img/debardeurbleu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    animation-name: bas-haut;
+    animation-range: 0% 100%;
+    animation-timeline: view();
+}
+
+
+.right-side {
+    width: 45vw;
+    height: 100vh;
+    background-image: url('../../../assets/produit img/casquettenoirehomme.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+}
+
+.bottom-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+
+    width: 100%;
+    height: 80vh;
+    
+    background-image: url('../../../assets/produit img/protmod.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.details-top-vente {
+    display: flex;
+    flex-direction: column;
+    font-family: "inter" , serif;
+    margin: 1%;
+    color: whitesmoke;
+}
+
+.bouton-top-vente {
+    color: whitesmoke;
+    background: rgb(1, 36, 82);
+    width: 100px;
+    height: 35px;
+    margin-top: 2%;
+
+}
+
+.details-top-vente-bottom {
+    color: rgb(57, 83, 141);
+    align-items: end;
+}
+.details-top-vente-left {
+    color: black;
+}
+
+.details-mobile {
+    display: none;
+}
+
+
+@media (max-width : 1024px) {
+
+    .hero-populaire {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .left-side , .right-side{
+        width: 100%;
+        margin-top: 1vh;
+
+    }
+
+    .details-top-vente {
+        display: none;
+    }
+
+    .details-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background: red; */
+        padding-inline: 5px;
+
+    }
+
+    .details-mobile p {
+        text-align: center;
+        font-family: "inter";
+        font-size: 14px;
+    }
+
+    .bouton-top-vente {
+        background: #00000000;
+        border: 2px solid #0044AA ;
+        color: #0044AA ;
+        width: 75vw;
+        max-width: 350px;
+    }
+
+}

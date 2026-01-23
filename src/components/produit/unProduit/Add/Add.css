@@ -1,0 +1,36 @@
+.Add-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    /* background: #5ef025; */
+    text-align: right;
+   
+    width: 100%;
+    /* z-index: 200; */
+}
+
+.plusAdd {
+      
+    width: 25px;
+}
+
+.plusAdd:hover {
+    cursor: pointer;   
+    
+}
+
+.Add-hover {
+   
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background: #ffffff;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-block: 3px;
+    gap: 5px;
+    border-radius: 20px;
+    display: none;
+}

@@ -1,0 +1,110 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    height: 93vh;
+    overflow-y: hidden;
+    /* justify-content: center; */
+    align-items: center;
+    /* background: #6b1313; */
+    background: linear-gradient(0deg,#110C2C,#061043);
+    height: 100vh;
+    font-family: "inter" ,serif;
+    
+
+}
+
+.hero-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 10px; */
+    height: 500px ;
+    max-width: 450px;
+    width: 75%;
+    min-width: 250px;
+    margin-top: 15%;
+    /* background: red; */
+    background: rgba(255, 255, 255, 0.377);
+    border-radius: 15px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px  #fffffffb;
+}
+
+.signUp {
+    text-align: right;
+    max-width: 450px;
+    width: 75%;
+    min-width: 250px;
+    margin-top: 0.5%;
+    color: whitesmoke;
+}
+
+.hero-login h1 {
+    font-size: 40px;
+    color: #3200C7;
+  
+}
+
+.ContinuerAvec {
+    /* background: #1d0b0b; */
+    display: flex;
+    gap: 25px;
+}
+
+.ContinuerAvec .imgIcon {
+    max-width: 40px;
+}
+
+.champ-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* background: rgb(25, 212, 19); */
+}
+
+
+
+
+.Champ-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.text:hover {
+ cursor: pointer;
+
+}
+
+.imgIcon:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(0.9);
+}
+
+.champ-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.inputLogin {
+    border-radius: 5px;
+    border: 1px solid #7D7070;
+    padding-inline: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.bouton-login {
+    background: #ffffffd0;
+    border: 1px white solid;
+}

@@ -1,0 +1,27 @@
+.bouton {
+    border: 0px;
+    width: 180px;
+    height: 45px;
+    border-radius: 100px;
+}
+
+.bouton:hover {
+    cursor: pointer;
+}
+
+.bouton-home {
+    background: rgb(141, 228, 218);
+    
+}
+
+.bouton-home:hover {
+    
+    background:  aliceblue;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.bouton-login {
+    background: rgb(85, 88, 247);
+    border-radius: 10px ;
+}

@@ -1,0 +1,8 @@
+.range-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "inter" , serif;
+    /* background: #c27171; */
+    width: 90%;
+}

@@ -1,0 +1,109 @@
+.image-details {
+    width: auto;
+    height: 70vh;
+}
+
+.container-details-proudit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    height: 90vh;
+}
+
+.container-photo {
+    display: flex;
+    justify-content: center;
+    /* overflow-x: scroll; */
+    height: fit-content;
+    overflow-y: hidden;
+    width: 100%;
+    /* background: gray; */
+}
+
+.box-photo {
+    display: flex;
+    /* gap: 10px; */
+    overflow-y: hidden;
+    /* justify-content: center; */
+    align-items: center;
+    width: fit-content;
+    /* background: #27c765; */
+    /* padding: 5px; */
+    /* padding: 15px; */
+    height: 65vh;
+}
+
+.box-photo img {
+    height: 100%;
+}
+    
+
+.nom-details {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.details-like {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    /* background: #b82c2c; */
+    width: 100%;
+}
+
+.buy-box {
+    display: flex;
+    flex-direction: column;
+    height: 20vh ;
+    width: 80%;
+    max-width: 600px;
+    font-family: "inter" ,serif;
+    justify-content: space-between;
+    align-items: center;
+    /* background: gray; */
+}
+
+.bouton-ajouter-panier {
+    background: #00000000;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 250px;
+    color: black;
+    font-size: 15px;
+}
+.bouton-ajouter-panier:hover {
+    background: #00000033;
+    transition: 0.3s;
+}
+.bouton-ajouter-panier:active {
+    background: #00000098;
+    transition: 0.3s;
+}
+
+.container-details-proudit h3 {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    /* background: #000; */
+}
+
+.nom-details > h2 {
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.nom-details > p {
+    font-weight: 300;
+}
+
+
+
+@media (max-width : 1000px ) {
+    .container-details-proudit {
+        display: flex;
+        flex-direction: column;
+    }
+}

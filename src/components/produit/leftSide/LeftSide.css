@@ -1,0 +1,39 @@
+
+
+.left-side-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: #bd8787;
+    height: 93vh;
+    width: 12vw;
+    left: 10vw;
+    gap : 150px;
+    background: #00000004;
+
+
+}
+
+.checkbox-product-left-side {
+    margin-top: 10px;
+}
+
+.filtre , .tri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: #1dbb25; */
+    width: 100%;
+}
+
+@media (max-width:1050px) {
+
+    .left-side-container {
+       display: none;
+
+    }
+   
+}
+
