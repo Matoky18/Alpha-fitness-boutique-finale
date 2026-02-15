@@ -39,12 +39,13 @@ const Home = ({refDiv}) => {
         <div className="Acheter-Maintenant">
             <p>Acheter maintenant</p>
 
-              <Bouton className='bouton bouton-home' 
+              {/* <Bouton className='bouton bouton-home' 
                   handleClick={handleClick} 
                   nameButton="Acheter maintenant" 
-              />
-              <Bouton className='bouton bouton-home-mobile' 
-                  handleClick={handleClick} classNameIcon={"panier-Icon-Mobile"} icon={IconPanier} />
+              /> */}
+              {/* <Bouton className='bouton bouton-home-mobile' 
+                  handleClick={handleClick} classNameIcon={"panier-Icon-Mobile"} icon={IconPanier}
+              /> */}
         </div>
           
          
