@@ -26,11 +26,13 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    padding-left: 5vw;
+    /* padding-left: 5vw; */
     width: calc(20px + 15vw + 60vw);
     height: fit-content;
     overflow-x: scroll;
-    gap: 5vw;
+    gap: 20px;
+    border-radius: 50px;
+    scrollbar-width:none;
 }
 
 
@@ -89,11 +91,15 @@
 
 .next , .prev {
     width: 20px;
+    margin: 10px;
 }
 
 
 .next:hover , .prev:hover {
     cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+    
 }
 
 .phrase > h4 {
@@ -136,6 +142,7 @@
         display: flex;
         gap: 20px ;
         width: 80vw;
+        
     }
 
 
