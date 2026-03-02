@@ -23,7 +23,13 @@ import csqnoire1 from "../../assets/produit img/csqnoire1.png"
 import csqnoiredos from "../../assets/produit img/csqnoiredos.png"
 import csqnoireprof1 from "../../assets/produit img/csqnoireprof1.png"
 import csqnoireprof2 from "../../assets/produit img/csqnoireprof2.png"
-
+import velotEllipt from "../../assets/produit img/velotelliptique.png"
+import velospinning from "../../assets/produit img/velospinning.png"
+import cordeasauter from "../../assets/produit img/cordeasauter.png"
+import tapisdecourse from "../../assets/produit img/tapisdecourse.png"
+import rameur from "../../assets/produit img/rameur.png"
+import stepper from "../../assets/produit img/stepper.webp"
+import proteine3dos from "../../assets/produit img/proteine3dos.png"
 
 
 export const produits = [
@@ -34,13 +40,21 @@ export const produits = [
         {id: "pubar001", categorie: "Musculation", produitNum: "produit5", produitName: "Barres de pompes", imageProduit: barrePompe, prix: "30", details: "Barres parallèles pour pompes, confortables pour les poignets", promo: true, img: barrePompe2 , img1: barrePompe },
 
 
+
+        {id:"vel001",categorie :"Cardio", produitNum : "produit1", produitName : "Vellot Eliptique", imageProduit : velotEllipt , prix :"650" , details :"Appareil cardio complet, fluide, sans impact articulaire" ,promo :false , img : "" , img1 : ""},
+        {id:"vesp002",categorie :"Cardio", produitNum : "produit2", produitName : "Vélo Spinning", imageProduit : velospinning , prix :"250" , details :"Vélo de spinning pour un entraînement intensif à domicile" ,promo :false , img : "" , img1 : ""},
+        {id:"cord001",categorie :"Cardio",produitNum : "produit3", produitName : "Corde à sauter", imageProduit : cordeasauter , prix :"15" , details :"Corde à sauter pour un entraînement cardio efficace et amusant" ,promo :false , img : "" , img1 : ""},
+        {id:"tapi001",categorie :"Cardio",produitNum : "produit4", produitName : "Tapis de course", imageProduit : tapisdecourse , prix :"800" , details :"Tapis de course pour un entraînement cardio complet à domicile" ,promo :false , img : "" , img1 : ""},
+        {id:"rame001",categorie :"Cardio",produitNum : "produit5", produitName : "Rameur", imageProduit : rameur , prix :"500" , details :"Rameur pour un entraînement cardio complet et efficace à domicile" ,promo :false , img : "" , img1 : ""},
+        {id:"step001",categorie :"Cardio",produitNum : "produit6", produitName : "Stepper", imageProduit : stepper , prix :"300" , details :"Stepper pour un entraînement cardio efficace et ciblé sur les jambes à domicile" ,promo :false , img : "" , img1 : ""},
+
+
+
         {id :"vet001", categorie :"Vêtement",produitNum : "produit1", produitName : "jogging", imageProduit : produit1 , prix :"10" , details :"Un jogging confortable et stylé",promo :false , img : "" , img1 : ""},
         {id :"sweat001", categorie :"Vêtement",produitNum : "produit2", produitName : "sweat", imageProduit : produit4 , prix :"40" , details :"Un sweat à capuche chaud",promo :false , img : "" , img1 : ""},
         {id :"short001", categorie :"Vêtement",produitNum : "produit3", produitName : "Short", imageProduit : produit5 , prix :"50" , details :"Une veste imperméable",promo :false , img :""  , img1 : ""},
         {id :"debar001", categorie :"Vêtement",produitNum : "produit4", produitName : "Débardeur", imageProduit : produit6 , prix :"60" , details :"Un accessoire tendance",promo :false , img : "" , img1 : ""},
         {id :"debar002", categorie :"Vêtement",produitNum : "produit5", produitName : "Débardeur", imageProduit : debardeurhomme1 , prix :"60" , details :"Un accessoire tendance",promo :false , img : "" , img1 : ""},
-
-
 
 
         {id:"gant001",categorie :"Accessoire",produitNum : "produit1", produitName : "Gants de musculation", imageProduit : gantphoto1 , prix :"20" , details :"Gants pour une meilleure prise en main",details2 : "protéger les mains contre les ampoules,améliorer la prise sur la barre,réduire la douleur pendant l’entraînement" ,promo :false , img1 : gantphoto2 , img : gantphoto3 , img2 : gantphoto4},
@@ -50,7 +64,7 @@ export const produits = [
 
         {id :"prot001",categorie :"Nutrition",produitNum : "produit1", produitName : "Proteine", imageProduit : proteine1 , prix :"10" , details :"Proteine  pour la récupération musculaire",promo :false , img : "" , img1 : ""},
         {id :"barprot001",categorie :"Nutrition",produitNum : "produit2", produitName : "Bar Proteine modifié", imageProduit : proteine2 , prix :"10" , details :" Bar Proteine pour une collation saine",promo :false , img : "" , img1 : ""},
-        {id :"aminoc001",categorie :"Nutrition",produitNum : "produit3", produitName : "Amino Acides", imageProduit : proteine3 , prix :"15" , details :"améliorer la performance",promo :false , img : "" , img1 : ""},
+        {id :"aminoc001",categorie :"Nutrition",produitNum : "produit3", produitName : "Amino Acides", imageProduit : proteine3 , prix :"15" , details :"améliorer la performance",promo :false , img : "proteine3dos" , img1 : "proteine3dos"},
 
 
 ]
