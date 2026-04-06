@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    left:  11px;
+    /* left:  11px; */
     /* background: rgba(24, 117, 255, 0.281); */
 }
 
@@ -35,13 +35,10 @@
     position: relative;
     color: rgba(0, 0, 0, 0.267);
     font-size: 20px;
-    right: 20px;
+    right: 25px;
     z-index: 1;
-    /* background: white; */
-    /* width: 20px; */
-    /* right: 32px; */
+ 
     width: clamp(15px,0.8vw,20px);
-
 }
 
 .loupeSearch:hover {
@@ -59,18 +56,15 @@
 
 @media (max-width : 1000px) {
 
-    .search-container {
-        
-
-        display: none;
-       
+    .search-container {      
+        display: none;       
     }
 
-    .search-container-mobile {
-        
+    .search-container-mobile {        
         position: absolute;
-        top: 13vh;
-         display: flex;
+        margin-top: 20px;
+        
+        display: flex;
         align-items: center;
         justify-content: center;
         /* background: rgb(190, 61, 190); */
@@ -84,20 +78,17 @@
         display: flex;
         /* background: red; */
         /* background: #ffffff48; */
-        border-bottom: 2px white solid;
-        
-        width: 85vw;
-
-        background: rgba(255, 255, 255, 0.288);
+        /* border-bottom: 2px rgb(0, 0, 0) solid; */        
+        width: 70vw;
+        background: rgba(3, 3, 3, 0.418);
         border: 0px;
         border-radius: 5px;
         /* border-bottom: solid 1px rgba(0, 0, 0, 0.534); */
         margin-left: 20px;
         height: 26px;
         padding-inline-start: 15px;
-        
-       
-        border-bottom: 2px solid rgba(245, 245, 245, 0.432);
+               
+        border-bottom: 2px solid rgba(0, 0, 0, 0.13);
         
     }
 
@@ -106,7 +97,7 @@
         display: flex;
         background: rgba(255, 251, 251, 0.199);
         /* background: #d41818e3; */
-        border-bottom: 2px rgba(255, 255, 255, 0.459) solid;
+        border-bottom: 2px rgba(255, 255, 255, 0.555) solid;
         border: 0px;
         width: 70vw;
         outline: none;
@@ -116,8 +107,8 @@
 
     .loupeSearch-mobile  {
         position: relative;
-        right: 20px;
-        color: rgba(255, 255, 255, 0.493);
+        right: 25px;
+        color: rgb(255, 255, 255);
         width: fit-content;
         /* background: rgb(112, 2, 2); */
         font-size: 20px;

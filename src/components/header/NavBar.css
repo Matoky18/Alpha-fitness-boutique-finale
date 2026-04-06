@@ -7,8 +7,6 @@
     justify-content: center ;
     align-items: center;
     height: 7vh;
-    z-index: 10000;
-    background: #ffffff;
     color: rgb(0, 0, 0);
     font-family: "Montserrat" ,serif;
     backdrop-filter: blur(10px);
@@ -60,12 +58,12 @@
 }
 
 .navbar li:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(223, 27, 27);
     transition: 0.5s;
 }
 
 .navbar li:active {
-    color: rgb(255, 255, 255);
+    color: rgb(236, 236, 236);
     transition: 0.5s;
 }
 
@@ -76,7 +74,6 @@
     height: 40px;
     left: 0;
     margin-left: 10px;
-
     animation: show;
     animation-duration:  2s;
     animation-delay: 1s ;
@@ -87,8 +84,6 @@
     transform: scale(1.2);
     transition: 0.5s;
 }
-
-
 
 
 .iconNav {
@@ -107,8 +102,7 @@
 
 .iconNavItem {
     cursor: pointer;
-    font-size: clamp(15px,0.8vw,20px);
-    
+    font-size: clamp(15px,0.8vw,20px);    
     color: rgba(0, 0, 0, 0.26);
 
 }
@@ -137,7 +131,7 @@
 }
 
 .iconNavItem:hover {
-    color: aliceblue;
+    color: rgb(37, 148, 204);
     transition: 0.5s;
 }
 

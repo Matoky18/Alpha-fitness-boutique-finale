@@ -1,5 +1,5 @@
 import NavBar from "../header/NavBar";
-import React from 'react'
+import React, { use, useRef } from 'react'
 import './Home.css'
 import bgHome from '../../assets/bghome.png'
 import Bouton from "../bouton/Bouton";
@@ -13,47 +13,43 @@ import IconPanier from "../../assets/icon/addpanier.png"
 
 const Home = ({refDiv}) => {
 
-  const handleClick = () => {
+  const refNouv = useRef();
 
-  }
+  const handlescroll = () => {
 
-  
+      refNouv.current.scrollIntoView({ behavior: 'smooth' });
+
+
+  }  
   
   return (
     <div className="container-home" ref={refDiv}  >
 
       <Search className = {"searchBar-Nav-mobile"} searchContainer= "search-container-mobile" searchInput="searchInput-mobile" loupeSearch="loupeSearch-mobile" />  
          
-       <div className='heroHome' >
-          
-          <h1>
-            Atteignez vos objectifs sportifs avec
-            le meilleur équipement !
-          </h1>
+          <div className='heroHome' >
+              
+            <div className="text-home">
+                <h1>
+                  Atteignez vos objectifs sportifs avec
+                  le meilleur équipement !
+                </h1>         
+            </div>
 
-          <h2>
-            Livraison rapide, qualité 
-            garantie et offres exclusives.
-          </h2>
+            <div className="Acheter-Maintenant">
+                
+              <Bouton className='bouton bouton-home' 
+                  handleClick={handlescroll} 
+                  nameButton="Voir les nouveautés"                 
 
-        <div className="Acheter-Maintenant">
-            <p>Acheter maintenant</p>
-
-              {/* <Bouton className='bouton bouton-home' 
-                  handleClick={handleClick} 
-                  nameButton="Acheter maintenant" 
-              /> */}
-              {/* <Bouton className='bouton bouton-home-mobile' 
-                  handleClick={handleClick} classNameIcon={"panier-Icon-Mobile"} icon={IconPanier}
-              /> */}
-        </div>
-          
+              />
+                
+            </div>       
          
-
-       </div>
+          </div>
 
       <TopVente/>
-      <Nouveaute />
+      <Nouveaute ref = {refNouv} />
       <Promotion />
 
     </div>

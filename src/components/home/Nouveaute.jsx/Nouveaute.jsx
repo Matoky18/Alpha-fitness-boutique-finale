@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './Nouveaute.css'
 import Bouton from "../../bouton/Bouton"
 import { faAngleRight , faAngleLeft} from '@fortawesome/free-solid-svg-icons'
@@ -7,9 +7,10 @@ import { Link } from 'react-router-dom'
 
 
 
-const Nouveaute = () => {
+const Nouveaute = forwardRef((props, ref)=>{
+
   return (
-    <div className="nouveaute">
+    <div ref={ref} className="nouveaute">
 
       <div className="container-nouveaute" >
 
@@ -43,6 +44,6 @@ const Nouveaute = () => {
 
     </div>
   )
-}
+})
 
 export default Nouveaute

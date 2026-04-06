@@ -14,9 +14,6 @@ import x from "../../assets/icon/croixMobile.png"
 import { PanierContext } from '../../assets/Context/Panier/PanierContext'
 
 
-
-
-
 const NavBar = () => {
 
    const categorieTitre = ["Musculation","Cardio","Vêtement","Accessoire","Nutrition"];
@@ -84,8 +81,11 @@ const NavBar = () => {
                     <div className='iconNavItem' >
                         
                         <div className="icon-prodnumber">
+
                             <FontAwesomeIcon icon={iconItem.icon} /> 
+                            
                             <div className="product-number" style={{display : `${iconItem.display}` }} > {totalQuantite > 0 && totalQuantite } </div>
+
                         </div>
 
                     </div>
