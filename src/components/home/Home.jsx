@@ -16,11 +16,9 @@ const Home = ({refDiv}) => {
   const refNouv = useRef();
 
   const handlescroll = () => {
-
       refNouv.current.scrollIntoView({ behavior: 'smooth' });
-
-
   }  
+  
   
   return (
     <div className="container-home" ref={refDiv}  >

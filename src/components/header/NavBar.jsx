@@ -35,21 +35,21 @@ const NavBar = () => {
         
     ]
 
-    const handleMenu = () => {
+    const handleMenuMobile = () => {
         setMenuOuvert(!menuOuvert)
         document.body.style.overflow = !menuOuvert ? 'hidden' : 'auto';
     }
-
-    //  console.log(totalQuantite , "dans navbar")
+    const handleMenu = () => {
+        setMenuOuvert(!menuOuvert)
+        // document.body.style.overflow = !menuOuvert ? 'hidden' : 'auto';
+    }
    
 
   return (
 
     <div className='navbar' >
 
-
         <img className='logo' src={logo} alt="" />
-
 
         <ul className= {`menu-mobile ${menuOuvert?'ouvert':'' }`} >
 
@@ -99,7 +99,7 @@ const NavBar = () => {
 
         <div  className="menu">
 
-            <img onClick={()=> handleMenu()} className='menu-Icon' src= {menu} alt="" />
+            <img onClick={()=> handleMenuMobile()} className='menu-Icon' src= {menu} alt="" />
         
         </div>
 
