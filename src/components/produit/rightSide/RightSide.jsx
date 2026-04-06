@@ -12,14 +12,12 @@ const RightSide = () => {
     const {prixTotal} = useContext(PanierContext)
   
   return (
-
-
     <div className='right-side-container' >
 
       <div className="montant-total">
 
-                Montant total : 
-            <div className="prix"> {prixTotal}$</div>
+        Montant total : 
+        <div className="prix"> {prixTotal}$</div>
 
       </div>
 

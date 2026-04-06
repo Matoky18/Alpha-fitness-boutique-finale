@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+
 .cart-container {
     display: flex;
     align-items: center;
@@ -39,12 +42,10 @@
 }
 
 .container-produits-panier {
-    display: flex;
-    
+    display: flex;    
     align-items: space-between;
     background: #ffffff;
-    width: 40vw;
-    
+    width: 40vw;    
     min-height: 120px;
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
@@ -63,10 +64,8 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
-    
-    border-radius: 5px;
-    
+    align-items: center;    
+    border-radius: 5px;    
     padding: 20px;
     gap: 15px;
 }
@@ -74,8 +73,10 @@
 
 
 .item-produit-cart {
+    font-family: "Parisienne",cursive;
     display: flex;
     flex-direction: column;
+    color: #021127;
     /* background: #34b4b8; */
     width: 100%;
     margin-bottom: 25px;
@@ -92,6 +93,8 @@
     
     width: 400px;
 }
+
+
 
 .sup-pan:hover, .add-pan:hover {
     cursor: pointer;

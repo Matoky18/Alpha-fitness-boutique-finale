@@ -52,6 +52,8 @@ const Cart = () => {
                 </div>
                     
 
+                    
+
                   <div className="bottom-block-cart">
 
                         <h3>{produit.prix}$ </h3>

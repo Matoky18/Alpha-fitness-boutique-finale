@@ -19,40 +19,33 @@
     padding-inline: 2px;
 }
 
-.details > .quant {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    width: fit-content;
-    /* background: red; */
-}
+
 
 .details > .prix {
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .add-pan,.sup-pan {
     cursor: pointer;
     padding: 0px;
     margin: 0px;
-    font-size: 15px;
-    height: 15px;
-    font-size: 15px;
+    height: 12px;
     font-weight: bold;
 }
+
+
 
 .quant {
     display: flex;
     align-items: end;
-    justify-content: flex-end;
+    justify-content: center ;
     /* background: #5679d8; */
     width: fit-content;
     padding: 0px;
 }
 
 .quant > p {
-    font-size: 15px;
+    font-size: 17px;
 }
