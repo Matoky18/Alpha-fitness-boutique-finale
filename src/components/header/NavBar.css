@@ -11,7 +11,7 @@
     backdrop-filter: blur(10px);
     top: 0px;
     background: #ffffff8c;
-    
+    z-index: 50;
 }
 
 .item-nav, .accueil {

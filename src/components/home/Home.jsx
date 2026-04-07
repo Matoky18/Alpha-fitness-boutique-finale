@@ -29,8 +29,7 @@ const Home = ({refDiv}) => {
               
             <div className="text-home">
                 <h1>
-                  Atteignez vos objectifs sportifs avec
-                  le meilleur équipement !
+                  Atteignez vos objectifs sportifs avec le meilleur équipement !
                 </h1>         
             </div>
 
@@ -38,7 +37,7 @@ const Home = ({refDiv}) => {
                 
               <Bouton className='bouton bouton-home' 
                   handleClick={handlescroll} 
-                  nameButton="Voir les nouveautés"                 
+                  nameButton="Voir les nouveautés"               
 
               />
                 
