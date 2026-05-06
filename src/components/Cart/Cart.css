@@ -7,7 +7,6 @@
     justify-content: center;
     gap: 10vw;
     width: 100vw;
-    height: 93vh;
     font-family: "Montserrat" ,serif;
     
 }
@@ -68,6 +67,7 @@
     border-radius: 5px;    
     padding: 20px;
     gap: 15px;
+    width: 400px ;
 }
 
 
@@ -91,7 +91,7 @@
     padding-bottom: 0px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.089);
     
-    width: 400px;
+    
 }
 
 
@@ -108,7 +108,9 @@
 }
 
 .box-total {
-    width: 400px ;
+    max-width: 400px ;
+    width: 90%;
+    
 }
 
 .bouton-passer-commande {
@@ -194,7 +196,7 @@
         flex-direction: column;
         padding-top: 50px;
         gap: 5vh;
-        height: fit-content;
+        min-height: 100vh;
     }
 
     .cart-container > main {
@@ -215,4 +217,12 @@
     .details > p {
         font-size: 12px;
     }
+
+
+    .right-side-cart {
+        /* background: hotpink; */
+        max-width: 400px ;
+        width: 90%;
+    }
+
 }

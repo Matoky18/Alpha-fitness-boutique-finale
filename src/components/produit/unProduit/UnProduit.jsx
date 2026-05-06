@@ -21,30 +21,32 @@ const UnProduit = ({id}) => {
     <div className='UnProduit-container'  style={{backgroundImage : `url(${imageProduit})`}}  >
            
 
-            <div className="produit-element"  >
+      <div className="produit-element"  >
 
-                <div className="like-container">
-                    <img className="like" onClick={()=> handleLike(produit)} src= {likePhoto(produit)} alt="" />
-                </div>
-                
-               <div className="bottom-block-produit">
-                     <div className="details-Produit">
+          <div className="like-container">
+              <img className="like" onClick={()=> handleLike(produit)} src= {likePhoto(produit)} alt="" />
+          </div>
+          
+          <div className="bottom-block-produit">
+              
+              <div className="details-Produit">
 
-                      <Link className='link-produit' to={`/produit/${id}`}>
-                         <h4 className='nom-produit' > {produitName} </h4>
-                      </Link>
-                      
+                <Link className='link-produit' to={`/produit/${id}`}>
+                    <h4 className='nom-produit' > {produitName} </h4>
+                </Link>                
 
-                        <p className='details' > {details} </p>
+                  <p className='details' > {details} </p>
 
-                        <h3 className='prix'> {prix} </h3>
+                  <h3 className='prix'> {prix} </h3>
 
-                    </div>
+              </div>
 
-                    <Add produit={produit}/>
-               </div>
+              <Add produit={produit}/>
+          </div>
 
-            </div>
+      </div>
+
+
     </div>
 
   )
