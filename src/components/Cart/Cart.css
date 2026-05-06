@@ -6,9 +6,12 @@
     align-items: center;
     justify-content: center;
     gap: 10vw;
-    width: 100vw;
+    width: 100%;
     font-family: "Montserrat" ,serif;
-    
+    /* background: mediumpurple; */
+    height: 88vh;
+    margin-top: 5vh ;
+    box-sizing: border-box;
 }
 
 .cart-container > main {
@@ -17,13 +20,14 @@
     justify-content: start;
     /* background: #c72985; */
     height: fit-content;
-    max-height: 80%;
     margin-left: 50px;
     overflow-y: scroll;
     width: fit-content;
     border: 1px solid rgba(0, 0, 0, 0.137);
-    background: #00000002;
+    /* background: #00000002; */
+    /* background: red; */
     padding: 20px;
+    height: 70vh;
 }
 
 .cart-container > main > h1 {

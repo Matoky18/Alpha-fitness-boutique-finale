@@ -37,11 +37,10 @@ const NavBar = () => {
 
     const handleMenuMobile = () => {
         setMenuOuvert(!menuOuvert)
-        document.body.style.overflow = !menuOuvert ? 'hidden' : 'auto';
     }
+
     const handleMenu = () => {
         setMenuOuvert(!menuOuvert)
-        // document.body.style.overflow = !menuOuvert ? 'hidden' : 'auto';
     }
    
 
