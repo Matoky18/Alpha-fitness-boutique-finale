@@ -40,6 +40,11 @@ import dosproduit5 from "../../assets/produit img/dosproduit5.png"
 import sac0 from "../../assets/produit img/sac0.png"
 import sac1 from "../../assets/produit img/sac1.png"
 import sac2 from "../../assets/produit img/sac2.png"
+import gourdephoto1 from "../../assets/produit img/gourdephoto1.png"
+import appareilmusculationphoto1 from "../../assets/produit img/appareilmusculationphoto1.png"
+import susptrphoto0 from "../../assets/produit img/susptrphoto0.png"
+import tapisphoto01 from "../../assets/produit img/tapisphoto01.png"
+
 
 
 
@@ -48,8 +53,22 @@ export const produits = [
         
         {id : "ha001" , categorie :"Musculation", produitNum : "produit1", produitName : "Haltères", imageProduit : Aletere , prix :"50" , details :"Ensemble d'haltères réglables ",promo :false , img : "" , img1 : ""},
         {id :"apmus001", categorie :"Musculation", produitNum : "produit2", produitName : "Apprareil musculation", imageProduit : new2 , prix :"250" , details :"Appareil complet pour musculation à domicile",promo :false , img : "" , img1 : ""},
-        {id: "ha002", categorie : "Musculation",produitNum : "produit4" , produitName : "Halteres disque", imageProduit : haltfondblanc , prix : "99" ,  details : "Ensemble d'haltères réglables" ,promo : true  , img : halt21 , img1 : halt2 },
-        {id: "pubar001", categorie: "Musculation", produitNum: "produit5", produitName: "Barres de pompes", imageProduit: barrePompe, prix: "30", details: "Barres parallèles pour pompes, confortables pour les poignets", promo: true, img: barrePompe2 , img1: barrePompe },
+        {id:"ha002", categorie : "Musculation",produitNum : "produit4" , produitName : "Halteres disque", imageProduit : haltfondblanc , prix : "99" ,  details : "Ensemble d'haltères réglables" ,promo : true  , img : halt21 , img1 : halt2 },
+        {id:"pubar001", categorie: "Musculation", produitNum: "produit5", produitName: "Barres de pompes", imageProduit: barrePompe, prix: "30", details: "Barres parallèles pour pompes, confortables pour les poignets", promo: true, img: barrePompe2 , img1: barrePompe },
+        {id:"apmus002",categorie:"Musculation",produitNum:"produit6",produitName:"Appareil de musculation mural",imageProduit:appareilmusculationphoto1,prix:"250",details:"Station murale pour tractions, dips et abdominaux",details2:"structure métallique robuste,poignées rembourrées pour le confort,permet de travailler le haut du corps efficacement,idéal pour un usage à domicile",promo:false,img1: "",img:"",img2:""},
+        {id:"susptr001",categorie:"Musculation",produitNum:"produit7",produitName:"Sangles de suspension",imageProduit: susptrphoto0 ,prix:"120",details:"Sangles de suspension pour entraînement fonctionnel",details2:"permet de travailler au poids du corps,renforce le gainage et la stabilité,adapté à tous niveaux,compact et facile à installer à domicile",promo:false,img1:"",img:"",img2:""},
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,6 +92,11 @@ export const produits = [
         {id :"gripo001", categorie :"Accessoire", produitNum : "produit2", produitName : "Gripo", imageProduit : gripofondblanc , prix :"25" , details :"Gant de musculation pour améliorer la prise",promo :false , img : "" , img1 : ""},
         {id :"cqt001", categorie :"Accessoire", produitNum : "produit3", produitName : "Casquette noire", imageProduit : csqnoireprof1 , prix :"25" , details :"Gant de musculation pour améliorer la prise" , details2 :"Casquette noire sport & lifestyle, pensée pour l’entraînement comme pour le quotidien Son design sobre et moderne s’adapte facilement à toutes les tenues, en salle comme à l’extérieur 🖤" ,promo :false , img : csqnoire1 , img1 : csqnoiredos , img2 : casquettenoirehomme , img3 : csqnoireprof2},
         {id :"sac001", categorie :"Accessoire",produitNum : "produit4", produitName : "Sac de sport", imageProduit : sac1 , prix :"40" , details :"Un sac de sport spacieux et pratique pour transporter vos affaires de sport",promo :false , img : sac0 , img1 : sac2},
+        {id:"gourde001",categorie :"Accessoire",produitNum : "produit5",produitName : "Gourde de sport",imageProduit : gourdephoto1,prix :"15",details :"Gourde pratique pour rester hydraté pendant l'entraînement",details2 : "facile à transporter,permet une hydratation rapide,conçue pour un usage sportif,résistante et réutilisable",promo :false,img1 : "" ,img : "",img2 : ""},
+        {id:"tapis001",categorie:"Accessoire",produitNum:"produit6",produitName:"Tapis de sport",imageProduit: tapisphoto01 ,prix:"40",details:"Tapis de sport antidérapant pour vos séances de fitness ou yoga",details2:"surface texturée pour une meilleure adhérence,facile à nettoyer et à transporter,offre confort et stabilité pendant l’entraînement,idéal pour le renforcement musculaire et la relaxation",promo:false,img1:"",img:"",img2:""},
+
+
+
 
 
         {id :"prot001",categorie :"Nutrition",produitNum : "produit1", produitName : "Proteine", imageProduit : proteine1 , prix :"10" , details :"Proteine  pour la récupération musculaire",promo :false , img : "" , img1 : ""},
