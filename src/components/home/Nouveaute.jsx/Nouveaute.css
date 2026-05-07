@@ -67,7 +67,7 @@
 
 
 .produit1 {
-    background-image: url('../../../assets/produit\ img/new1.png'); ;
+    background-image: url('../../../assets/produit-img/new1.png'); ;
    
 }
 .produit1:hover {
@@ -78,17 +78,17 @@
 .produit2 {
     max-width: 350px;
     width: 17vw;
-    background-image: url('../../../assets/produit\ img/new2.png');
+    background-image: url('../../../assets/produit-img/new2.png');
 }
 .produit2:hover{
     width: 375px;
     transition: 0.5s;
-    background-image: url('../../../assets/produit\ img/new2.png');
+    background-image: url('../../../assets/produit-img/new2.png');
 }
 
 
 .produit3 {
-    background-image: url('../../../assets/produit\ img/new3.png');
+    background-image: url('../../../assets/produit-img/new3.png');
     
 }
 
