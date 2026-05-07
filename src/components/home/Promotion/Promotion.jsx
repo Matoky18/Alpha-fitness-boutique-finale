@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from 'react'
-import pm from "../../../assets/produit img/halt2.png"
-import gm from "../../../assets/produit img/halt3.png"
+import pm from "../../../assets/produit-img/halt2.png"
+import gm from "../../../assets/produit-img/halt3.png"
 import "./Promotion.css"
 import Bouton from '../../bouton/Bouton'
 import next from "../../../assets/icon/next.png"
