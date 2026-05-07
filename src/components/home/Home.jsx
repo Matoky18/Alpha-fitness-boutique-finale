@@ -26,7 +26,7 @@ const Home = ({refDiv}) => {
 
       <Search className = {"searchBar-Nav-mobile"} searchContainer= "search-container-mobile" searchInput="searchInput-mobile" loupeSearch="loupeSearch-mobile" />  
          
-          <div className='heroHome' >
+          <div className='heroHome' style={{ backgroundImage: `url(${bgHome})` }} >
               
             <div className="text-home">
                 <h1>
