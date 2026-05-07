@@ -6,13 +6,12 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    background: #bd8787;
     height: 93vh;
     width: 12vw;
     left: 10vw;
     gap : 150px;
     background: #00000004;
-
+    display: none;
 
 }
 
