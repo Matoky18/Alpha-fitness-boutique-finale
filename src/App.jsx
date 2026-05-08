@@ -41,15 +41,15 @@ function App() {
                               
                )}
                 
-                    <Route key= 'panier' path= "/panier" element={<Cart/>} />
-                    <Route key= 'login' path= "login" element={<Login/>} />
-                    <Route path= "/produit/:id" element= {<DetailsProduit/>} />
-                    <Route key= 'Checkout' path='/commande' element ={<Checkout/>} />
-                    <Route key= 'PayerLivraison' path='/PayerLivraison' element ={<PayerLivraison/>} />
-                    <Route key= 'MobileMoney' path='/MobileMoney' element ={<MobileMoney/>} />
-                    <Route key= 'Visa' path='/Visa' element ={<Visa/>} />
-                    <Route key= 'Favoris' path='/Favoris' element ={<Favoris/>} />
-                    
+               <Route key= 'panier' path= "/panier" element={<Cart/>} />
+               <Route key= 'login' path= "login" element={<Login/>} />
+               <Route path= "/produit/:id" element= {<DetailsProduit/>} />
+               <Route key= 'Checkout' path='/commande' element ={<Checkout/>} />
+               <Route key= 'PayerLivraison' path='/PayerLivraison' element ={<PayerLivraison/>} />
+               <Route key= 'MobileMoney' path='/MobileMoney' element ={<MobileMoney/>} />
+               <Route key= 'Visa' path='/Visa' element ={<Visa/>} />
+               <Route key= 'Favoris' path='/Favoris' element ={<Favoris/>} />
+               
 
             </Routes>
          
