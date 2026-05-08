@@ -3,8 +3,7 @@
     flex-direction: column;
     font-family: "inter" ,serif;
     position: fixed;
-    background: #f0f0f04b;
-    
+    background: #f0f0f04b;    
     justify-content: space-between;
     right: 0px;
     height: calc(100vh - 100px) ;
