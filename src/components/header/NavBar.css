@@ -189,7 +189,7 @@
         justify-content: end;
         align-items: center;
         background: #0f0303c2;
-        height: 70px;
+        height: 100px;
         block-size: border;
         padding-right: 20px ;
         /* overflow-x: hidden; */
@@ -287,5 +287,6 @@
     }
 
 
+    
 
 }
