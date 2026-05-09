@@ -9,10 +9,16 @@ const Produit = ({refDiv,titre,Categorie}) => {
 
   const [value,setValue] = useState(800) 
 
+  const [leftsideVisible,setLeftsideVisible] = useState(false)
   
   const handleClick = () => {
-    
+
+    setLeftsideVisible(!leftsideVisible)
+
   }
+
+  const visibilityLS = leftsideVisible ? "visible" : "hidden";
+
 
 
   return (
@@ -20,7 +26,7 @@ const Produit = ({refDiv,titre,Categorie}) => {
     <div className='container-hero' ref={refDiv}>
 
  
-      <LeftSide  value={value} setValue={setValue} />
+      <LeftSide visibilityLS={visibilityLS} value={value} setValue={setValue} />
                
 
       <div className="produit-container">

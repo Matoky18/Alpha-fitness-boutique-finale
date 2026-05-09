@@ -105,12 +105,9 @@
         max-width: 650px;
     }
 
-}
-
-@media (max-width : 1024px) {
     .container-hero svg {
         display: block;
-        position: absolute;
+        position: fixed;
         width: 25px;
         right: 12.5px;
         bottom: 25px;
@@ -118,6 +115,9 @@
         padding: 12.5px;
         border-radius: 100%;
         z-index: 1;
+        
     }
+
 }
+
 
