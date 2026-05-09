@@ -3,8 +3,8 @@
 .UnProduit-container {  
     
     font-family: "Inter" , serif;
-    
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 350px;
     border-radius: 5px;
     background-position: center;
@@ -97,5 +97,9 @@
 
 a {
     text-decoration: none;
+    
+}
+
+@media( max-width : 425px ) {
     
 }
