@@ -1,8 +1,8 @@
 .bouton {
     border: 0px;
-    width: 180px;
+    /* width: 180px; */
     height: 45px;
-    border-radius: 100px;
+    /* border-radius: 100px; */
 }
 
 .bouton:hover {

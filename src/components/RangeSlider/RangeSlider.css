@@ -4,5 +4,17 @@
     gap: 10px;
     font-family: "inter" , serif;
     /* background: #c27171; */
-    width: 90%;
+    width: 100%;
+    margin-bottom: 25px;
+    box-sizing: border-box;
 }
+
+.range-slider > h3 , .range-slider > .Price {
+    padding-inline :  25px ;
+
+}
+
+.range-slider > h3 {
+    margin-top: 12.5px;
+}
+

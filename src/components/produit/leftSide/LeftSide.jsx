@@ -5,12 +5,12 @@ import RangeSlider from '../../RangeSlider/RangeSlider'
 import Bouton from '../../bouton/Bouton'
 import iconUp from '../../../assets/icon/icon-park-solid_up-two.png'
 
-const LeftSide = ({ visibilityLS ,value,setValue}) => {
+const LeftSide = ({ handleDownPrice ,handleUpPrice ,visibilityLS ,value,setValue}) => {
 
   const max = 800
 
 
-
+  
 
    
   return (
@@ -24,8 +24,8 @@ const LeftSide = ({ visibilityLS ,value,setValue}) => {
             
             <RangeSlider setNumber={setValue} value={value} RangePour={"Prix :"} unite={"€"} max={max} />
 
-            <Bouton className={"bouton rangeButton"} nameButton={"Prix"} icon={iconUp} classNameIcon={"iconUpPrice"} />
-            <Bouton className={"bouton rangeButton"} nameButton={"Prix"} icon={iconUp} classNameIcon={"iconDownPrice"} />
+            <Bouton handleClick={handleDownPrice} className={"bouton rangeButton"} nameButton={"Prix"} icon={iconUp} classNameIcon={"iconUpPrice"} />
+            <Bouton handleClick={handleUpPrice} className={"bouton rangeButton"} nameButton={"Prix"} icon={iconUp} classNameIcon={"iconDownPrice"} />
         
         
         </div>

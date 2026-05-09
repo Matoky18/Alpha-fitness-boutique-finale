@@ -10,11 +10,25 @@ const Produit = ({refDiv,titre,Categorie}) => {
   const [value,setValue] = useState(800) 
 
   const [leftsideVisible,setLeftsideVisible] = useState(false)
+
+  let sort = 0
+
   
+
+  const [price, setPrice] = useState(sort)
+  
+
+  const handleUpPrice = () => {
+    setPrice("up")
+  }
+  const handleDownPrice = () => {
+    setPrice("down")
+  }
+  
+ 
+
   const handleClick = () => {
-
     setLeftsideVisible(!leftsideVisible)
-
   }
 
   const visibilityLS = leftsideVisible ? "visible" : "hidden";
@@ -26,7 +40,7 @@ const Produit = ({refDiv,titre,Categorie}) => {
     <div className='container-hero' ref={refDiv}>
 
  
-      <LeftSide visibilityLS={visibilityLS} value={value} setValue={setValue} />
+      <LeftSide handleUpPrice={handleUpPrice} handleDownPrice={handleDownPrice} visibilityLS={visibilityLS} value={value} setValue={setValue} />
                
 
       <div className="produit-container">
@@ -39,7 +53,13 @@ const Produit = ({refDiv,titre,Categorie}) => {
 
             <div className="produit-hero">
                                    
-                  {Categorie.filter(element=> Number(element.prix) <= value).map((prod)=>
+                  {Categorie.sort((a , b) => 
+                
+                    price === "up" ? (Number(a.prix)-Number(b.prix)) : 
+                    price === "down" ? (Number(b.prix) - Number(a.prix) ) : 0
+                
+                
+                ).filter(element=> Number(element.prix) <= value).map((prod)=>
                     
                        <UnProduit key={Math.random()}  id = {prod.id} />
                                        

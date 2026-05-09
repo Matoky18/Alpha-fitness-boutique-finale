@@ -41,9 +41,26 @@
 }
 }
 
+.rangeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    gap: 12.5px;
+    /* border-radius: 5px; */
+    box-sizing: border-box;
+    margin-bottom: 12.5px;
+}
 
+.iconDownPrice {
+    rotate: 180deg;
+}
 
-
+.rangeButton > img {
+    width: 20px;
+}
 
 
 
@@ -72,6 +89,18 @@
        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35),
        4px 0px 4px rgba(0, 0, 0, 0.35);
 
+    }
+
+    .rangeButton {
+        max-width: 300px;
+       
+        /* background: red; */
+        width: 100%;
+    }
+
+    .filtre {
+        width: 100%;
+        /* background: #000; */
     }
    
 }
