@@ -84,10 +84,6 @@
     display: none;
 }
 
-@media (min-width : 1025px) {
-  
-
-}
 
 
 @media (max-width : 1024px) {
@@ -101,6 +97,9 @@
     .left-side , .right-side{
         width: 100%;
         margin-top: 1vh;
+        height: calc(100vh - 250px);
+        /* height: 100vh; */
+        /* background: maroon; */
 
     }
 
@@ -115,6 +114,8 @@
         justify-content: center;
         /* background: red; */
         padding-inline: 5px;
+        padding-block: 25px ;
+        gap: 12.5px;
 
     }
 

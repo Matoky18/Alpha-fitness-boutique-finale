@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     /* padding-block: 5vh ; */
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     /* background: #b8a3a3; */
 }
 
@@ -32,6 +32,7 @@
     justify-content: start;
     /* padding-left: 5vw; */
     width: calc(350px + 700px + 25px);
+    max-width: calc(50vw + 25vw + 25px);
     height: fit-content;
     overflow-x: scroll;
     gap: 12.5px;
@@ -61,7 +62,7 @@
     justify-content: end;
     align-items: end;
     width: 350px;
-    
+    max-width: 25vw;
     background-position: center;
     background-size: cover;
     padding: 10px;
@@ -72,6 +73,7 @@
 
 .image2-item {
     width: 700px;
+    max-width: 50vw;
 
    
     background-position: center;
@@ -81,8 +83,8 @@
 
 .bouton-promo {
     margin: 5px;
-    width: 90px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
     color: aliceblue;
 
     background: #3b0a15;
@@ -117,7 +119,7 @@
 
     .promotion-container h1 {
         font-family: "Euphoria Script" ,serif;
-        font-size: clamp(35px,12vw,60px) ;
+        
         
     }
 
@@ -127,9 +129,9 @@
     }
 
     .image1-item {
-        width: 65vw;
-        min-width: 100px;
-
+       width: calc(100vw - 100px) ;
+        max-width: 100%;
+        /* max-width: none; */
     }
 
     .image2-item {
@@ -140,15 +142,14 @@
         display: none;
     }
 
-    .chiffre-promo {
-        color: red;
-    }
   
     .all-promo {
         display: flex;
-        gap: 20px ;
-        width: 80vw;
-        
+        gap: 25px ;
+        width: calc(100vw - 50px) ;
+        max-width: 100%;
+        /* background: mediumturquoise; */
+        box-sizing: border-box;
     }
 
 
