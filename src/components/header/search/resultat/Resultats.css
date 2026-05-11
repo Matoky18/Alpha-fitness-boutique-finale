@@ -57,10 +57,12 @@ list-style: none;
     position: absolute;
     background: #ffffff;
     height: fit-content;
-    top: 3.5vh; 
+    top: 30px ; 
     /* padding: 10px; */
-    width: 72vw;
+    width: 75vw;
+    max-width: 415px;
     box-sizing: border-box;
+    z-index: 1;
     /* padding: 5px;  */
     /* border-bottom-radius: 10px; */
 }
@@ -72,17 +74,21 @@ list-style: none;
    align-items: center;
     font-size: 18px;
     /* background: rgba(0, 0, 0, 0.192); */
-    height: 30px;
+    /* height: 30px; */
+    padding: 10px;
     width: 100%;
+    box-sizing: border-box;
+    text-align: center;
     border-bottom: rgba(0, 0, 0, 0.26) 1px solid;
 }
+
 .resultat-search-container h2 > li {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
     /* background: #af2727; */
-    width: 70vw;
+    width: 100%;
 }
 
 }
