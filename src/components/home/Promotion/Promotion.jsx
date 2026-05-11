@@ -20,7 +20,7 @@ const Promotion = () => {
   const scrollNext = ( ) => {
       if (allpromoref.current) {
         allpromoref.current.scrollBy({
-        left : allpromoref.current.clientWidth/2 ,
+        left : allpromoref.current.clientWidth ,
         behavior : "smooth"
 
       })
@@ -29,7 +29,7 @@ const Promotion = () => {
   const scrollPrev = ( ) => {
       if (allpromoref.current) {
         allpromoref.current.scrollBy({
-         left : -allpromoref.current.clientWidth/2 ,
+         left : -allpromoref.current.clientWidth ,
         behavior : "smooth"
 
       })
