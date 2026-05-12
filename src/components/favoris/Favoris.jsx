@@ -11,7 +11,9 @@ const Favoris = () => {
     const {ajouterPanier} = useContext(PanierContext)
 
   return (
+
     <div className='favoris-container' >
+      
         <div className="block1">
 
             <div className="p1">
