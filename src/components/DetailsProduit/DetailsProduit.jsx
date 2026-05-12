@@ -23,19 +23,19 @@ const DetailsProduit = () => {
 
     <div className='container-details-proudit'>
 
-    <div className="container-photo">
+        <div className="container-photo">
 
-        <div className="box-photo">
-            <img src= {produit?.img} alt="" />
-            <img src= {produit?.img2} alt="" />
-            <img src={produit?.img1} alt="" />
-            
-            <img src= {produit?.img3} alt="" />
-            <img src= {produit?.img4} alt="" />
-            <img className='image-details' src= {produit.imageProduit} alt="" />   
-         </div>  
+            <div className="box-photo">
+                <img src= {produit?.img} alt="" />
+                <img src= {produit?.img2} alt="" />
+                <img src={produit?.img1} alt="" />
+                
+                <img src= {produit?.img3} alt="" />
+                <img src= {produit?.img4} alt="" />
+                <img className='image-details' src= {produit.imageProduit} alt="" />   
+            </div>  
 
-    </div>  
+        </div>  
 
         <div className="buy-box">
 
