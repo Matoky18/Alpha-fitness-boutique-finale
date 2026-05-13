@@ -13,7 +13,7 @@ const PayerLivraison = () => {
           <div className="hero-PayerLivraison">
 
             <div className="block1-PayerLivraison">
-              <h4>Commande #1025</h4>
+              <h4>Commande #1024</h4>
               <h1>Vous payerez à la réception de votre commande</h1>
               <h3>Total à payer : {prixTotal} $ </h3>
             </div>
