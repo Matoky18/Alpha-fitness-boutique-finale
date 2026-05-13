@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Bouton from '../bouton/Bouton'
 import './PayerLivraison.css'
+import { PanierContext } from '../../assets/Context/Panier/PanierContext'
 
 
 const PayerLivraison = () => {
+    const {prixTotal} = useContext(PanierContext)
+
   return (
     <div className='container-PayerLivraison' >
 
@@ -12,7 +15,7 @@ const PayerLivraison = () => {
             <div className="block1-PayerLivraison">
               <h4>Commande #1025</h4>
               <h1>Vous payerez à la réception de votre commande</h1>
-              <h3>Total à payer : 28 000 Ar</h3>
+              <h3>Total à payer : {prixTotal} $ </h3>
             </div>
 
           <div className="block2">

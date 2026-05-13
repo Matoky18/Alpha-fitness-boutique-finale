@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Bouton from '../bouton/Bouton'
 import "./MobileMoney.css"
+import { PanierContext } from '../../assets/Context/Panier/PanierContext'
 
 const MobileMoney = () => {
+
+      const {prixTotal} = useContext(PanierContext)
+
   return (
 
     <div className="Mobile-money-page">
@@ -14,7 +18,7 @@ const MobileMoney = () => {
                 <h4>Commande #1024</h4>
                 <h2>Mode de paiement sélectionné:</h2>
                 <h1> Mobile Money</h1>
-                <h5>Total à payer : 28 000 Ar</h5>
+                <h5>Total à payer : {prixTotal} $ </h5>
 
             </div>
 

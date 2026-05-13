@@ -22,6 +22,7 @@
     color: #0000003b;
     font-family: "inter" , serif;
     text-align: center;
+    font-size: 1.5rem;
 
 }
 
@@ -43,7 +44,11 @@
     color: #0a1a77 ;
     background: #1818451e;
     font-family: "Comic Neue";
-    font-size: 18px;
+    font-size: 1rem;
+    padding-inline: 25px;
+    margin-inline: 25px ;
+    min-height: 50px;
+    margin-top: 25px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
 }
 

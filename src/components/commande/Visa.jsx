@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Visa.css"
 import Input from "../../components/Input/Input"
 import Bouton from '../bouton/Bouton'
+import { PanierContext } from '../../assets/Context/Panier/PanierContext'
 
 const Visa = () => {
+
+
+  const {prixTotal} = useContext(PanierContext)
+
+
   return (
 
     <div className="visa-container">
@@ -15,7 +21,7 @@ const Visa = () => {
 
                 <h1>Mode de paiement sélectionné : Visa</h1>
                               
-                <h2>Total : $275 </h2>
+                <h2>Total : {prixTotal} $ </h2>
 
           </div>
             
