@@ -107,7 +107,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    max-width: 100px;
+    /* max-width: 100px; */
     max-height: 30px;
     width: fit-content;
     
@@ -116,6 +116,7 @@
     background: #181845;
     font-family: "Montserrat" ,serif;
     margin: 5px;
+    padding-inline: 10px;
 }
 
 .boutonNouveau:hover {
@@ -173,7 +174,6 @@
         height: 100%;
         /* width: calc(100vw - 100px) ; */
         width: calc(100vw - 50px) ;
-
         /* background: greenyellow; */
     }
 
