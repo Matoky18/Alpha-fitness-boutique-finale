@@ -6,7 +6,7 @@
     /* justify-content: center; */
     align-items: center;
     /* background: #6b1313; */
-    background: linear-gradient(0deg,#110C2C,#061043);
+    background: linear-gradient(145deg, var(--bleu-nuit), var(--bleu-profond) 55%, var(--bleu-principal));
     height: 100vh;
     font-family: "inter" ,serif;
     
@@ -25,10 +25,10 @@
     min-width: 250px;
     margin-top: 15%;
     /* background: red; */
-    background: rgba(255, 255, 255, 0.377);
+    background: rgba(66, 153, 204, 0.32);
     border-radius: 15px;
-    border: 1px solid white;
-    box-shadow: 1px 1px 10px  #fffffffb;
+    border: 1px solid var(--blanc);
+    box-shadow: 1px 1px 10px rgba(252, 248, 251, 0.98);
 }
 
 .signUp {
@@ -37,12 +37,12 @@
     width: 75%;
     min-width: 250px;
     margin-top: 0.5%;
-    color: whitesmoke;
+    color: var(--blanc);
 }
 
 .hero-login h1 {
     font-size: 40px;
-    color: #3200C7;
+    color: var(--bleu-profond);
   
 }
 
@@ -98,13 +98,14 @@
 
 .inputLogin {
     border-radius: 5px;
-    border: 1px solid #7D7070;
+    border: 1px solid var(--bleu-doux);
     padding-inline: 15px;
     box-sizing: border-box;
     width: 100%;
 }
 
 .bouton-login {
-    background: #ffffffd0;
-    border: 1px white solid;
+    background: var(--bleu-principal);
+    color: var(--blanc);
+    border: 1px solid var(--bleu-doux);
 }

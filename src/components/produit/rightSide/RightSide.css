@@ -3,7 +3,7 @@
     flex-direction: column;
     font-family: "inter" ,serif;
     position: fixed;
-    background: #f0f0f04b;    
+    background: rgba(66, 153, 204, 0.16);    
     justify-content: space-between;
     right: 0px;
     height: calc(100vh - 100px) ;
@@ -36,14 +36,14 @@
     gap: 10px;
     border-radius: 0px;
     font-weight: bold;
-    background: rgb(4, 29, 87);
-    color: white;
+    background: var(--bleu-nuit);
+    color: var(--blanc);
 
 }
 
 .Bouton-right-side:hover {
     cursor: pointer;
-    background: rgb(2, 48, 139);
+    background: var(--bleu-profond);
     transition: 0.2s;
 }
 
@@ -55,7 +55,7 @@
     align-items: center;
     width: 100%;
     font-size: 15px;
-    color: rgba(7, 34, 107, 0.822);
+    color: var(--bleu-profond);
     font-weight: 700;
 }
 
@@ -69,7 +69,7 @@
 }
  
 .trash-icon {
-    color: rgb(0, 0, 0);
+    color: var(--texte);
 }
 
 .panierIcon {

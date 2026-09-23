@@ -14,7 +14,7 @@
 }
 
 .searchInput {
-    background: rgba(204, 201, 201, 0.979);
+    background: rgba(66, 153, 204, 0.72);
     border: 0px;
     border-radius: 5px;
     /* border-bottom: solid 1px rgba(0, 0, 0, 0.534); */
@@ -25,13 +25,13 @@
 }
 .searchInput:focus {
     outline: none;
-    background: #ffffff;
+    background: var(--blanc);
     padding-right: 15px;
 }
 
 .loupeSearch {
     position: relative;
-    color: rgba(0, 0, 0, 0.952);
+    color: var(--bleu-nuit);
     font-size: 20px;
     right: 25px;
     z-index: 1;
@@ -41,7 +41,7 @@
 
 .loupeSearch:hover {
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.945);
+    color: var(--bleu-principal);
     transition: 0.5s;
 }
 
@@ -78,7 +78,7 @@
         /* background: #ffffff48; */
         /* border-bottom: 2px rgb(0, 0, 0) solid; */        
         width: 70vw;
-        background: rgba(3, 3, 3, 0.418);
+        background: rgba(66, 153, 204, 0.28);
         border: 0px;
         border-radius: 5px;
         /* border-bottom: solid 1px rgba(0, 0, 0, 0.534); */
@@ -86,27 +86,27 @@
         height: 26px;
         padding-inline-start: 15px;
                
-        border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+        border-bottom: 2px solid rgba(66, 153, 204, 0.45);
         
     }
 
     
     .searchInput-mobile:focus {
         display: flex;
-        background: rgba(255, 251, 251, 0.199);
+        background: rgba(66, 153, 204, 0.22);
         /* background: #d41818e3; */
-        border-bottom: 2px rgba(255, 255, 255, 0.555) solid;
+        border-bottom: 2px solid var(--bleu-clair);
         border: 0px;
         width: 70vw;
         outline: none;
-        box-shadow:  1px 1px 5px white;
+        box-shadow: 0 0 0 3px rgba(66, 153, 204, 0.2);
     }
 
 
     .loupeSearch-mobile  {
         position: relative;
         right: 25px;
-        color: rgb(255, 255, 255);
+        color: var(--blanc);
         width: fit-content;
         /* background: rgb(112, 2, 2); */
         font-size: 20px;

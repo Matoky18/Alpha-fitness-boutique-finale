@@ -111,7 +111,7 @@
         width: 25px;
         right: 12.5px;
         bottom: 25px;
-        background: rgb(226, 224, 221);
+        background: var(--bleu-clair);
         padding: 12.5px;
         border-radius: 100%;
         z-index: 1;

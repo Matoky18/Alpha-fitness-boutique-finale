@@ -50,7 +50,7 @@
 
 .hero-PayerLivraison > .block1-PayerLivraison > h1 {
     font-family: "inter" ,serif;
-    color: #000000;
+    color: var(--texte);
     font-size: clamp(24px, 5vw, 32px);
 
     text-align: left;
@@ -69,7 +69,7 @@
 } 
 
 .p2-livr > h5 {
-    color: rgb(21, 7, 102);
+    color: var(--bleu-profond);
     font-size: 16px;
 }
 
@@ -94,8 +94,8 @@
 
 .hero-PayerLivraison > .block3 > .p1 {
     width: 100%;
-    background: #968d8d10;
-    color: #FF0101;
+    background: rgba(66, 153, 204, 0.18);
+    color: var(--danger);
     font-family: "Montserrat" , serif;
     font-size: 15px;
     font-weight: 600;

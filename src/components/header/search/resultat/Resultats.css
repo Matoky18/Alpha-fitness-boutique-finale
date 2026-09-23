@@ -2,7 +2,7 @@
    display: flex;
    flex-direction: column;
     position: absolute;
-    background: #ffffff;
+    background: var(--blanc);
     height: fit-content;
     top: 5vh; 
     width: 170px;
@@ -12,7 +12,7 @@
 
 .resultat-search-container h2 > li > a {
     text-decoration: none;
-    color: rgb(11, 3, 58);
+    color: var(--bleu-nuit);
     font-family: "Montserrat";
     margin-top: 5px;
     font-family: "inter" ,serif;
@@ -29,8 +29,8 @@ list-style: none;
 
 
 .resultat-search-container h2 > li:hover {
- color: rgb(26, 5, 148);
- border-bottom: rgb(0, 0, 0) 2px solid;
+ color: var(--bleu-principal);
+ border-bottom: var(--bleu-principal) 2px solid;
  transition: 0.5s;
  font-family: "Montserrat";
 }
@@ -55,7 +55,7 @@ list-style: none;
    justify-content: center;
    align-items: center;
     position: absolute;
-    background: #ffffff;
+    background: var(--blanc);
     height: fit-content;
     top: 30px ; 
     /* padding: 10px; */
@@ -79,7 +79,7 @@ list-style: none;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-    border-bottom: rgba(0, 0, 0, 0.26) 1px solid;
+    border-bottom: rgba(66, 153, 204, 0.45) 1px solid;
 }
 
 .resultat-search-container h2 > li {

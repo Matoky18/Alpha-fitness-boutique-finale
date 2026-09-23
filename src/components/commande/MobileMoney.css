@@ -40,7 +40,7 @@
 }
 .text-mobile-money > h2 {
     font-weight: normal;
-    color: #0044AA;
+    color: var(--bleu-principal);
     
 }
 
@@ -72,8 +72,8 @@
 
 .hero-mobile-money > .p1 {
     text-align: center;
-    background: linear-gradient(to right, #F3E5E5, #EDCCCC);
-    color: black;
+    background: linear-gradient(to right, var(--bleu-glace), var(--bleu-clair));
+    color: var(--bleu-nuit);
     width: 100%;
     padding: 15px;
     
@@ -81,7 +81,7 @@
 
 .p2 {
     width: 100%;
-    color: rgb(0, 0, 0);
+    color: var(--texte);
     padding: 15px;
 }
 
@@ -96,8 +96,8 @@
     color: azure ;
     font-family: "Montserrat" ,serif;
     border-radius: 5px;
-    border: 1px solid #0044AA;
-    background: linear-gradient(to right, #3771C8 , #3A71C3) ;
+    border: 1px solid var(--bleu-profond);
+    background: linear-gradient(to right, var(--bleu-principal), var(--bleu-profond));
 }
 
 .bouton-hero {

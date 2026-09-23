@@ -39,7 +39,7 @@
 .container-visa > .block1-visa > h1 {
     font-weight: 500 ;
     font-size: 22px ;
-    color: rgb(0, 0, 0);
+    color: var(--texte);
 }
 
 .input-visa {
@@ -67,7 +67,7 @@
 }
 
 .hero-visa > h2 {
-    color: rgb(0, 0, 0);
+    color: var(--texte);
     font-family: "Inter" ,serif;
     font-size: 16px;
     text-align: left;
@@ -79,7 +79,7 @@
 .input-item-visa {
     height: 35px;
     border-radius: 3px;
-    border: solid 1px #0044aa25;
+    border: solid 1px rgba(66, 153, 204, 0.35);
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
     padding-left: 15px;
 }
@@ -96,10 +96,10 @@
 
 
 .container-visa > .block2  > .attention {
-        background: #BE3636 ;
+        background: var(--danger);
         
         text-align: center;
-        color: aliceblue;
+        color: var(--blanc);
         border-radius: 5px;
         padding: 10px;
 } 

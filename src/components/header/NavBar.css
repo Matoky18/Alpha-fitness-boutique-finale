@@ -10,14 +10,15 @@
     font-family: "Montserrat" ,serif;
     backdrop-filter: blur(10px);
     top: 0px;
-    background: #ffffff8c;
+    background: rgba(252, 248, 251, 0.9);
+    border-bottom: 1px solid rgba(66, 153, 204, 0.35);
     z-index: 50;
 }
 
 .item-nav, .accueil {
     font-family: "Montserrat" ,serif;
     font-weight: 500 ;
-    color: rgba(17, 17, 17, 0.705);
+    color: var(--bleu-profond);
     
 }
 
@@ -49,13 +50,13 @@
 
 
 .item-nav:hover , .accueil:hover {
-    color: rgb(0, 0, 0);
+    color: var(--bleu-principal);
     transition: 0.5s;
 }
 
 
 .item-nav:active , .accueil:active {
-    color: rgb(38, 3, 238);
+    color: var(--bleu-nuit);
     transition: 0.5s;
 }
 
@@ -107,7 +108,7 @@
 .iconNavItem {
     cursor: pointer;
     font-size: clamp(15px,0.8vw,20px);    
-    color: rgb(94, 93, 93);
+    color: var(--bleu-profond);
 
 }
 
@@ -124,7 +125,7 @@
     display: flex;
     align-items: end;
     justify-content: end;
-    color: rgb(226, 39, 39);
+    color: var(--bleu-principal);
     /* background: rgba(18, 8, 160, 0.644); */
     font-weight: 500;
     position: absolute;
@@ -135,7 +136,7 @@
 }
 
 .iconNavItem:hover {
-    color: rgb(37, 148, 204);
+    color: var(--bleu-principal);
     transition: 0.5s;
 }
 
@@ -188,7 +189,8 @@
         display: flex;
         justify-content: end;
         align-items: center;
-        background: #0f0303c2;
+        background: rgba(12, 43, 98, 0.94);
+        border-bottom-color: rgba(252, 248, 251, 0.25);
         height: 100px;
         block-size: border;
         padding-right: 20px ;
@@ -214,7 +216,7 @@
     .iconNav {
         position: absolute;
         width: 100px;
-        color: rgb(223, 22, 22);
+        color: var(--bleu-clair);
         /* background: red; */
         position: absolute;
        
@@ -226,7 +228,7 @@
         width: 30px;
         font-size: 20px;
         height: auto;
-        color: white;
+        color: var(--blanc);
     }
 
     .navbar ul {
@@ -237,7 +239,7 @@
         position: fixed ;
         top : 0px;
         right: 0px;
-        background: rgba(0, 0, 0, 0.767);
+        background: rgba(12, 43, 98, 0.94);
         backdrop-filter: blur(10px);
         height: 100vh;
         width: 40vw;
@@ -258,7 +260,7 @@
         /* background: violet; */
         text-align:right;
         font-size: 15px ;
-        color: rgb(255, 255, 255);
+        color: var(--blanc);
     }
 
 

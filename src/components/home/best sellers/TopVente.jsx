@@ -75,7 +75,7 @@ const TopVente = () => {
         start: "-30% center",
         end: "50% 25%",
         // markers: true,
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
     },
 
         y:0,

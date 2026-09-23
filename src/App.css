@@ -1,11 +1,48 @@
 * {
     margin: 0;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --bleu-nuit: #0c2b62;
+    --bleu-profond: #0c2b62;
+    --bleu-principal: #4299cc;
+    --bleu-doux: #4299cc;
+    --bleu-clair: #fcf8fb;
+    --bleu-glace: #fcf8fb;
+    --blanc: #fcf8fb;
+    --texte: #211e1c;
+    --accent: #db2f5e;
+    --danger: #db2f5e;
 }
 
 html {
     padding: 0px;
     margin: 0px;
+}
+
+body {
+    min-width: 320px;
+    background: var(--bleu-glace);
+    color: var(--texte);
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--blanc);
 }
 
 @keyframes show {

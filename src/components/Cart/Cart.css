@@ -31,7 +31,7 @@
 }
 
 .cart-container > main > h1 {
-    color: #003380;
+    color: var(--bleu-profond);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.295);
 }
 
@@ -47,7 +47,7 @@
 .container-produits-panier {
     display: flex;    
     align-items: space-between;
-    background: #ffffff;
+    background: var(--blanc);
     width: 40vw;    
     min-height: 120px;
     margin-bottom: 10px;
@@ -81,7 +81,7 @@
     /* font-family: "Parisienne",cursive; */
     display: flex;
     flex-direction: column;
-    color: #021127;
+    color: var(--texte);
     /* background: #34b4b8; */
     width: 100%;
     margin-bottom: 25px;
@@ -119,10 +119,10 @@
 }
 
 .bouton-passer-commande {
-    border: 2px solid #0044AA ;
+    border: 2px solid var(--bleu-principal);
     border-radius: 5px;
     background: #00000000;
-    color: #0044AA ;
+    color: var(--bleu-principal);
     font-family: "Montserrat" ;
     font-weight: 600 ;
     max-width: 250px;
@@ -161,7 +161,7 @@
 }
 
 .icon-supprimer-tout {
-    color: red;
+    color: var(--danger);
     font-size: 18px;
 }
 .icon-supprimer-tout:hover {

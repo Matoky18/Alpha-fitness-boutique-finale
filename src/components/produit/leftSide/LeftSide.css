@@ -76,7 +76,7 @@
     .left-side-container.visible  {
        display: flex;
        z-index: 1;
-       background: rgb(255, 255, 255);
+       background: var(--blanc);
        max-width: 300px;
        width: 100%;
        height: 50vh;

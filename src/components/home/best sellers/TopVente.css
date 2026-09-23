@@ -63,12 +63,12 @@
     flex-direction: column;
     font-family: "inter" , serif;
     margin: 1%;
-    color: whitesmoke;
+    color: var(--blanc);
 }
 
 .bouton-top-vente {
-    color: whitesmoke;
-    background: rgb(1, 36, 82);
+    color: var(--blanc);
+    background: var(--bleu-nuit);
     width: 100px;
     height: 35px;
     margin-top: 2%;
@@ -76,11 +76,11 @@
 }
 
 .details-top-vente-bottom {
-    color: rgb(57, 83, 141);
+    color: var(--bleu-profond);
     align-items: end;
 }
 .details-top-vente-left {
-    color: black;
+    color: var(--texte);
 }
 
 .details-mobile {
@@ -130,10 +130,17 @@
 
     .bouton-top-vente {
         background: #00000000;
-        border: 2px solid #0044AA ;
-        color: #0044AA ;
+        border: 2px solid var(--bleu-principal);
+        color: var(--bleu-principal);
         width: 75vw;
         max-width: 350px;
     }
 
 }
+
+.container-home .hero-populaire { margin-inline: auto; }
+.container-home .left-side,
+.container-home .right-side,
+.container-home .bottom-side { align-items: center; }
+.container-home .details-top-vente,
+.container-home .details-mobile { align-items: center; text-align: center; }

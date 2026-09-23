@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    background: var(--bleu-glace);
     
     /* height: 100vh; */
     
@@ -22,6 +23,7 @@
     gap: 30px;
     background-size: cover;
     background-position: center;
+    background-color: var(--bleu-nuit);
     
 }
 
@@ -39,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: var(--blanc);
     font-family: 'inter',serif;
     
     animation: show;
@@ -65,11 +67,12 @@
     animation: show;
     animation-duration:  2s;
     animation-delay: 1s ;
-    background: white;
+    background: var(--accent);
+    color: var(--blanc);
     border-radius: 15px;
     font-size: large;
     width: 200px;
-    box-shadow: 1px 3px 5px  #ffffff8c ;
+    box-shadow: 0 8px 22px rgba(12, 43, 98, 0.3);
 }
 
 .Acheter-Maintenant p{
@@ -100,7 +103,7 @@
 
     .Acheter-Maintenant p {
         display: flex;
-        color: #8de4da93 ;
+        color: var(--bleu-clair);
         font-family: "Montserrat" ,serif;
     }
 
@@ -119,7 +122,7 @@
 
 
     .heroHome h2 {
-        color: rgb(255, 255, 255);
+        color: var(--blanc);
         font-size: clamp(15px,4vw,20px) ;
         width: 70vw;
         text-align: center;
@@ -153,3 +156,7 @@
 
 
 }
+
+.container-home .text-home,
+.container-home .Acheter-Maintenant { text-align: center; }
+.container-home .Acheter-Maintenant { align-items: center; }

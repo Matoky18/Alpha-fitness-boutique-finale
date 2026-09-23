@@ -2,6 +2,9 @@
     border: 0px;
     /* width: 180px; */
     height: 45px;
+    color: var(--blanc);
+    background: var(--accent);
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
     /* border-radius: 100px; */
 }
 
@@ -10,18 +13,19 @@
 }
 
 .bouton-home {
-    background: rgb(141, 228, 218);
+    background: var(--accent);
+    color: var(--blanc);
     
 }
 
 .bouton-home:hover {
-    
-    background:  aliceblue;
+    background: var(--bleu-profond);
     transition: 0.5s;
     transform: scale(1.1);
 }
 
 .bouton-login {
-    background: rgb(85, 88, 247);
+    background: var(--accent);
+    color: var(--blanc);
     border-radius: 10px ;
 }

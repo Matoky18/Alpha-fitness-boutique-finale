@@ -1,7 +1,7 @@
 .inputText {
     border-radius: 20px;
-    border: solid 1px rgb(32, 58, 177);
-    background: #ffffff62;
+    border: solid 1px var(--bleu-doux);
+    background: rgba(255, 255, 255, 0.78);
 }
 
 .inputLogin {
