@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 
 .container-home {
+    --bleu-nuit: #26231f;
+    --bleu-profond: #37342f;
+    --bleu-principal: #dfa574;
+    --bleu-doux: #dfa574;
+    --bleu-clair: #f3e8de;
+    --bleu-glace: #f3e8de;
+    --blanc: #fffaf5;
+    --texte: #26231f;
+    --accent: #dfa574;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -72,7 +81,7 @@
     border-radius: 15px;
     font-size: large;
     width: 200px;
-    box-shadow: 0 8px 22px rgba(12, 43, 98, 0.3);
+    box-shadow: 0 8px 22px rgba(38, 35, 31, 0.3);
 }
 
 .Acheter-Maintenant p{

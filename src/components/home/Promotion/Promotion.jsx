@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ProduitContext } from '../../../assets/Context/ProduitContext'
 import barresPompesPromotion from '../../../assets/produit-img/barres-pompes-promotion.png'
@@ -9,6 +9,18 @@ const Promotion = () => {
   const produits = useContext(ProduitContext)
   const offres = produits.filter((produit) => produit.promo === true)
   const [activeIndex, setActiveIndex] = useState(0)
+  const [isImageHovered, setIsImageHovered] = useState(false)
+
+  useEffect(() => {
+    if (offres.length < 2 || isImageHovered) return undefined
+
+    const intervalId = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % offres.length)
+    }, 2000)
+
+    return () => window.clearInterval(intervalId)
+  }, [offres.length, isImageHovered])
+
   if (!offres.length) return null
 
   const index = activeIndex % offres.length
@@ -24,7 +36,7 @@ const Promotion = () => {
           <h2 id="promotion-title">Offre exclusive</h2>
           <p className="promotion-discount">−30<span>%</span></p>
       
-          <div className="promotion-product" aria-live="polite" aria-atomic="true">
+          <div className="promotion-product" key={produit.id} aria-live="polite" aria-atomic="true">
             <span className="promotion-category">{produit.categorie}</span>
             <h3>{produit.produitName}</h3>
             <p>{produit.details}</p>
@@ -35,7 +47,12 @@ const Promotion = () => {
           </Link>
 
         </div>
-        <div className="promotion-visual" key={produit.id}>
+        <div
+          className="promotion-visual"
+          key={produit.id}
+          onMouseEnter={() => setIsImageHovered(true)}
+          onMouseLeave={() => setIsImageHovered(false)}
+        >
           
           <img src={produit.id === 'pubar001' ? barresPompesPromotion : produit.id === 'ha002' ? halteresPromotion : (produit.img1 || produit.img || produit.imageProduit)} alt={produit.produitName} loading="lazy" />
         </div>
@@ -56,5 +73,4 @@ const Promotion = () => {
 }
 
 export default Promotion
-
 
