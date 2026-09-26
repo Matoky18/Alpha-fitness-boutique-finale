@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-
-
 .cart-container {
     display: flex;
     align-items: center;
@@ -41,6 +38,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: var(--bleu-glace);
+    background-blend-mode: multiply;
     margin: 5px;
 }
 

@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 5px;
     border-radius: 7px;
+    mix-blend-mode: multiply;
 
 }
 

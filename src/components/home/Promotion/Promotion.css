@@ -24,6 +24,10 @@
 
 /* Style des textes : zone de contenu, sous-titre et titre */
 .promotion-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 48px;
     color: #26231f;
     background: #e8d7c9;
@@ -75,6 +79,7 @@
 
 /* Style des informations du produit : catégorie, nom et description */
 .promotion-product {
+    width: 100%;
     margin-top: 26px;
     padding-top: 22px;
     border-top: 1px solid #26231f24;
