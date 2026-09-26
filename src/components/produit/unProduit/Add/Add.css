@@ -34,3 +34,7 @@
     border-radius: 20px;
     display: none;
 }
+
+.plusAdd {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(32%) saturate(827%) hue-rotate(337deg) brightness(97%);
+}

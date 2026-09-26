@@ -11,10 +11,13 @@
     --blanc: #fffaf5;
     --texte: #26231f;
     --accent: #dfa574;
+    --font-display: 'Bodoni Moda', 'Times New Roman', serif;
+    --font-body: 'Montserrat', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     width: 100%;
     background: var(--bleu-glace);
+    font-family: var(--font-body);
     
     /* height: 100vh; */
     
@@ -51,7 +54,7 @@
     justify-content: center;
     align-items: center;
     color: var(--blanc);
-    font-family: 'inter',serif;
+    font-family: var(--font-display);
     
     animation: show;
     animation-duration:  2.5s;
@@ -164,6 +167,17 @@
 
 
 
+}
+
+.container-home h1,
+.container-home h2,
+.container-home h3,
+.container-home .promotion-discount {
+    font-family: var(--font-display);
+}
+
+.container-home :is(button, a, p) {
+    font-family: var(--font-body);
 }
 
 .container-home .text-home,

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-
 .nouveaute {
   margin-top: 50px;
   padding: 64px 24px 72px;
@@ -7,10 +5,10 @@
   font-family: 'Montserrat', sans-serif;
   min-width: 0;
 }
-.nouveaute-container { width: 100%; max-width: 1040px; margin-inline: auto; }
+.nouveaute-container { width: 100%; max-width: 1400px; margin-inline: auto; }
 .nouveaute-heading { text-align: center; margin-bottom: 34px; }
 .nouveaute-eyebrow { color: var(--bleu-nuit); font-size: 10px; font-weight: 700; letter-spacing: 3px; }
-.nouveaute-heading h1 { font-family: 'Bad Script', cursive; font-size: clamp(2.5rem, 5vw, 3.2rem); color: var(--bleu-nuit); margin: 8px 0; }
+.nouveaute-heading h1 { font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 3.2rem); font-weight: 600; color: var(--bleu-nuit); margin: 8px 0; }
 .nouveaute-heading p { color: #5f554e; font-size: 14px; line-height: 1.7; }
 .nouveaute-cards { overflow: hidden; padding: 12px 6px 24px; }
 .nouveaute-card { position: relative; display: flex; flex-direction: column; min-width: 0; height: auto; isolation: isolate; overflow: hidden; border: 2px solid #fffaf5; border-radius: 28px; background: transparent; color: #26231f; text-decoration: none; box-shadow: 0 12px 28px #26231f1c; transition: transform .3s ease, box-shadow .3s ease; }
@@ -39,7 +37,7 @@
 
 .nouveaute-track { display: flex; width: max-content; animation: nouveaute-scroll 32s linear infinite; }
 .nouveaute-group { display: flex; gap: 24px; padding-right: 24px; }
-.nouveaute-group .nouveaute-card { flex: 0 0 auto; width: clamp(260px, 28vw, 330px); }
+.nouveaute-group .nouveaute-card { flex: 0 0 auto; width: clamp(290px, 27vw, 390px); }
 .nouveaute-cards:has(.nouveaute-card:hover) .nouveaute-track,
 .nouveaute-cards:has(.nouveaute-card:focus-visible) .nouveaute-track,
 .nouveaute-cards:focus-visible .nouveaute-track { animation-play-state: paused; }

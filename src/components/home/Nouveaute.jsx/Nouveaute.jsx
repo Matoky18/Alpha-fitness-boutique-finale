@@ -33,7 +33,6 @@ const Nouveaute = forwardRef(function Nouveaute(props, ref) {
     <section ref={ref} className="nouveaute" aria-labelledby="nouveaute-title">
       <div className="nouveaute-container">
         <header className="nouveaute-heading">
-          <span className="nouveaute-eyebrow">LA SÉLECTION ALPHA</span>
           <h1 id="nouveaute-title">Nouveau</h1>
           <p>Fraîchement ajoutés, prêts à vous accompagner à l’entraînement.</p>
         </header>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,800;6..96,900&family=Montserrat:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0px;
@@ -15,6 +17,16 @@
     --texte: #211e1c;
     --accent: #db2f5e;
     --danger: #db2f5e;
+    --font-display: 'Bodoni Moda', 'Times New Roman', serif;
+    --font-body: 'Montserrat', Arial, sans-serif;
+    --text-h1: clamp(1.75rem, 2.2vw + 1rem, 3rem);
+    --text-h2: clamp(1.375rem, 1.25vw + 1rem, 2.25rem);
+    --text-h3: clamp(1.125rem, .65vw + 1rem, 1.5rem);
+    --text-body: clamp(.9375rem, .18vw + .9rem, 1.0625rem);
+    --text-card-title: clamp(1.0625rem, .35vw + 1rem, 1.25rem);
+    --text-button: clamp(.8125rem, .2vw + .78rem, .9375rem);
+    --text-small: clamp(.75rem, .16vw + .72rem, .875rem);
+    --text-label: clamp(.6875rem, .12vw + .66rem, .75rem);
 }
 
 html {
@@ -26,6 +38,30 @@ body {
     min-width: 320px;
     background: var(--bleu-glace);
     color: var(--texte);
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: var(--font-display) !important;
+}
+
+p,
+a,
+button,
+input,
+select,
+textarea,
+label,
+li {
+    font-family: var(--font-body) !important;
 }
 
 button,
@@ -33,6 +69,170 @@ input,
 select,
 textarea {
     font: inherit;
+}
+
+/* Échelle typographique responsive commune à tout le site */
+h1 {
+    font-size: var(--text-h1) !important;
+    line-height: 1.12 !important;
+    font-weight: 700 !important;
+}
+
+h2 {
+    font-size: var(--text-h2) !important;
+    line-height: 1.18 !important;
+    font-weight: 650 !important;
+}
+
+h3 {
+    font-size: var(--text-h3) !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+}
+
+h4 {
+    font-size: clamp(1rem, .3vw + .95rem, 1.125rem) !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+h5,
+h6 {
+    font-size: clamp(.875rem, .2vw + .84rem, 1rem) !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+p {
+    font-size: var(--text-body) !important;
+    line-height: 1.6 !important;
+    font-weight: 400;
+}
+
+button,
+.bouton,
+.auth-link,
+.promotion-cta,
+.nouveaute-cta,
+.nouveaute-next {
+    font-size: var(--text-button) !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+}
+
+input,
+select,
+textarea,
+label {
+    font-size: var(--text-body) !important;
+    line-height: 1.45 !important;
+}
+
+.navbar-brand {
+    font-size: clamp(1rem, .35vw + .95rem, 1.1875rem) !important;
+    line-height: 1.1 !important;
+    font-weight: 700 !important;
+}
+
+.navbar-link,
+.auth-link {
+    font-size: var(--text-small) !important;
+    line-height: 1.2 !important;
+}
+
+.nouveaute-info h2,
+.promotion-product h3,
+.nom-produit,
+.details-panier h2 {
+    font-size: var(--text-card-title) !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+}
+
+.nouveaute-info p,
+.promotion-product p,
+.details,
+.details-mobile p {
+    font-size: var(--text-small) !important;
+    line-height: 1.55 !important;
+}
+
+.nouveaute-badge,
+.nouveaute-category,
+.nouveaute-eyebrow,
+.promotion-category,
+.promotion-eyebrow,
+.promotion-image-label,
+.product-number {
+    font-size: var(--text-label) !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.promotion-discount {
+    font-size: clamp(4rem, 7vw, 6.5rem) !important;
+    line-height: .95 !important;
+    font-weight: 800 !important;
+}
+
+.promotion-arrow {
+    font-size: 1.375rem !important;
+    line-height: 1 !important;
+}
+
+.navbar-toggle {
+    font-size: 1.125rem !important;
+    line-height: 1 !important;
+}
+
+.montant-total,
+.rangeButton,
+.Price,
+.quant,
+.prix {
+    font-size: clamp(.875rem, .2vw + .84rem, 1rem) !important;
+    line-height: 1.4 !important;
+}
+
+.montant-total .prix {
+    font-size: clamp(.9375rem, .25vw + .9rem, 1.0625rem) !important;
+    font-weight: 700 !important;
+}
+
+.bottom-block-cart h3,
+.item-fav h3 {
+    font-size: var(--text-small) !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.favoris-container > .block1 > .p1 {
+    font-size: var(--text-h3) !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.favoris-container > .block1 > .p2 {
+    font-size: var(--text-body) !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+}
+
+.prix-total {
+    font-size: var(--text-h3) !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+}
+
+.resultat-search-container h2 {
+    font-size: inherit !important;
+    line-height: 1.4 !important;
+}
+
+.resultat-search-container a {
+    font-size: var(--text-small) !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
 }
 
 button,

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCartShopping, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 import { PanierContext } from '../../assets/Context/Panier/PanierContext'
+import alphaLogo from '../../assets/alpha-logo.svg'
 import './NavBar.css'
 
 const navigation = [
@@ -23,7 +24,7 @@ const NavBar = () => {
     <header className="site-header">
       <nav className="navbar" aria-label="Navigation principale">
         <Link className="navbar-brand" to="/" onClick={fermerMenu} aria-label="Alpha Fitness - Accueil">
-          <span className="navbar-mark" aria-hidden="true">A</span>
+          <img className="navbar-logo" src={alphaLogo} alt="" aria-hidden="true" />
           <span>Alpha Fitness</span>
         </Link>
 

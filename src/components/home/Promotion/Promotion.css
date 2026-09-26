@@ -4,7 +4,7 @@
     min-width: 0;
     padding: 64px 24px;
     background: #26231f;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-body);
 }
 
 /* Disposition de la bannière : texte à gauche et image à droite */
@@ -43,6 +43,7 @@
     font-size: clamp(24px, 3vw, 36px);
     font-weight: 600;
     letter-spacing: -1px;
+    font-family: var(--font-display);
 }
 
 /* Style du −30 % : taille et dégradé bleu */
@@ -93,6 +94,7 @@
     margin: 8px 0;
     font-size: 21px;
     font-weight: 600;
+    font-family: var(--font-display);
 }
 
 .promotion-product p {

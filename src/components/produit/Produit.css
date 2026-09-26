@@ -11,6 +11,13 @@
  
 
  .container-hero {
+    --bleu-nuit: #26231f;
+    --bleu-profond: #37342f;
+    --bleu-principal: #a9683f;
+    --bleu-clair: #f3e8de;
+    --blanc: #fffaf5;
+    --texte: #26231f;
+    --accent: #dfa574;
     display: flex;
     justify-content: center;
     /* background: #c427af; */
@@ -18,6 +25,8 @@
     margin-top: -100px;
     padding-top: 100px;
     box-sizing: border-box;
+    background: #f7f0eb;
+    color: var(--texte);
     
  }
 
@@ -111,7 +120,8 @@
         width: 25px;
         right: 12.5px;
         bottom: 25px;
-        background: var(--bleu-clair);
+        background: var(--accent);
+        color: var(--bleu-nuit);
         padding: 12.5px;
         border-radius: 100%;
         z-index: 1;
