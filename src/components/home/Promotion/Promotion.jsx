@@ -20,7 +20,7 @@ const Promotion = () => {
       <div className="promotion-banner">
         <div className="promotion-copy">
           
-          <span className="promotion-eyebrow">LA SÉLECTION À PRIX DOUX</span>
+      
           <h2 id="promotion-title">Offre exclusive</h2>
           <p className="promotion-discount">−30<span>%</span></p>
       

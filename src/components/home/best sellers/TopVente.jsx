@@ -66,7 +66,6 @@ const TopVente = () => {
 
     gsap.fromTo (bottomImage.current ,
     {
-        y: 250,
         opacity: 0,
     },
       {
@@ -77,8 +76,6 @@ const TopVente = () => {
         // markers: true,
         toggleActions: "play reverse play reverse",
     },
-
-        y:0,
         duration : 1 ,
         yoyo : true,
         opacity:1,
