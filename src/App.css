@@ -7,16 +7,27 @@
 }
 
 :root {
-    --bleu-nuit: #0c2b62;
-    --bleu-profond: #0c2b62;
-    --bleu-principal: #4299cc;
-    --bleu-doux: #4299cc;
-    --bleu-clair: #fcf8fb;
-    --bleu-glace: #fcf8fb;
-    --blanc: #fcf8fb;
-    --texte: #211e1c;
-    --accent: #db2f5e;
-    --danger: #db2f5e;
+    --color-primary: #38342d;
+    --color-primary-hover: #26231f;
+    --color-accent: #e0a677;
+    --color-accent-hover: #c98d5d;
+    --color-bg: #f5f5f5;
+    --color-surface: #ffffff;
+    --color-text: #38342d;
+    --color-text-secondary: #625d55;
+    --color-border: rgba(56, 52, 45, .18);
+    --color-shadow: rgba(56, 52, 45, .16);
+    --color-danger: #8b3f38;
+    --bleu-nuit: var(--color-primary);
+    --bleu-profond: var(--color-primary);
+    --bleu-principal: var(--color-accent);
+    --bleu-doux: var(--color-accent);
+    --bleu-clair: var(--color-bg);
+    --bleu-glace: var(--color-bg);
+    --blanc: var(--color-surface);
+    --texte: var(--color-text);
+    --accent: var(--color-accent);
+    --danger: var(--color-danger);
     --font-display: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'Montserrat', Arial, sans-serif;
     --text-h1: clamp(1.75rem, 2.2vw + 1rem, 3rem);
@@ -483,5 +494,227 @@ a {
     .promotion-copy,
     .nouveaute-info { padding: var(--space-4) !important; }
     .auth-link { padding-inline: var(--space-3) !important; }
+}
+
+/* Rôles chromatiques communs à tout le site */
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+::selection {
+    background: var(--color-accent);
+    color: var(--color-primary);
+}
+
+:is(a, button, input, select, textarea):focus-visible {
+    outline-color: var(--color-accent) !important;
+}
+
+.bouton,
+.bouton-home,
+.bouton-login,
+.bouton-confirmer-commande {
+    border-color: var(--color-accent) !important;
+    background: var(--color-accent) !important;
+    color: var(--color-primary) !important;
+}
+
+.bouton:hover,
+.bouton-home:hover,
+.bouton-login:hover,
+.bouton-confirmer-commande:hover {
+    border-color: var(--color-primary) !important;
+    background: var(--color-primary) !important;
+    color: var(--color-surface) !important;
+}
+
+.bouton-passer-commande,
+.bouton-ajouter-panier {
+    border-color: var(--color-primary) !important;
+    background: transparent !important;
+    color: var(--color-primary) !important;
+}
+
+.bouton-passer-commande:hover,
+.bouton-ajouter-panier:hover {
+    background: rgba(224, 166, 119, .2) !important;
+    color: var(--color-primary) !important;
+}
+
+input,
+select,
+textarea,
+.input-checkout,
+.input-item-visa,
+.inputLogin {
+    border-color: var(--color-border) !important;
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+}
+
+input::placeholder,
+textarea::placeholder,
+.input-checkout::placeholder {
+    color: var(--color-text-secondary) !important;
+    opacity: 1;
+}
+
+.searchInput,
+.searchInput-mobile {
+    border-color: var(--color-border) !important;
+    background: rgba(255, 255, 255, .92) !important;
+    color: var(--color-text) !important;
+}
+
+.searchInput:focus,
+.searchInput-mobile:focus {
+    border-color: var(--color-accent) !important;
+    box-shadow: 0 0 0 3px rgba(224, 166, 119, .24) !important;
+}
+
+.resultat-search-container {
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+}
+
+.resultat-search-container a { color: var(--color-primary) !important; }
+.resultat-search-container h2 > li:hover { border-color: var(--color-accent) !important; }
+
+.container-hero,
+.cart-container,
+.favoris-container,
+.page-checkout,
+.Mobile-money-page,
+.container-PayerLivraison,
+.visa-container {
+    background: var(--color-bg) !important;
+    color: var(--color-text) !important;
+}
+
+.left-side-container,
+.right-side-container,
+.hero-favoris {
+    border-color: var(--color-border) !important;
+    background: rgba(224, 166, 119, .14) !important;
+}
+
+.UnProduit-container,
+.container-produits-panier,
+.right-side-cart,
+.block-hero-favoris,
+.hero-visa {
+    border-color: var(--color-border) !important;
+    background-color: var(--color-surface) !important;
+    color: var(--color-text) !important;
+}
+
+.UnProduit-container,
+.image-panier,
+.item-fav {
+    background-color: var(--color-surface) !important;
+}
+
+.nom-produit,
+.link-produit,
+.block-hero-favoris > h1,
+.favoris-container > .block1 > .p1 {
+    color: var(--color-primary) !important;
+}
+
+.details,
+.favoris-container > .block1 > .p2,
+.nouveaute-info p,
+.promotion-product p {
+    color: var(--color-text-secondary) !important;
+}
+
+.range-slider input[type="range"] { accent-color: var(--color-accent) !important; }
+.montant-total .prix { color: var(--color-primary) !important; }
+.Bouton-right-side { background: var(--color-primary) !important; color: var(--color-surface) !important; }
+.Bouton-right-side:hover { background: var(--color-primary-hover) !important; }
+
+.cart-container > main,
+.container-produits-panier,
+.box-item,
+.container-produitItem > .itemProduit {
+    border-color: var(--color-border) !important;
+}
+
+.cart-container > main > h1,
+.prix-total,
+.item-fav h3 {
+    color: var(--color-primary) !important;
+    text-shadow: none !important;
+}
+
+.icon-supprimer-tout,
+.hero-PayerLivraison > .block3 > .p1 {
+    color: var(--color-danger) !important;
+}
+
+.bouton-panier-vide {
+    border-color: var(--color-primary) !important;
+    background: rgba(224, 166, 119, .22) !important;
+    color: var(--color-primary) !important;
+}
+
+.bouton-panier-vide:hover {
+    background: var(--color-accent) !important;
+}
+
+.icon-bag-empty { color: var(--color-primary) !important; }
+.panier-vide-container h1 { color: var(--color-primary) !important; }
+.panier-vide-container h3 { color: var(--color-text-secondary) !important; }
+
+.login-container {
+    background: var(--color-primary) !important;
+}
+
+.hero-login {
+    border-color: rgba(255, 255, 255, .72) !important;
+    background: rgba(255, 255, 255, .1) !important;
+    box-shadow: 0 12px 32px rgba(38, 35, 31, .28) !important;
+}
+
+.hero-login h1,
+.login-container .text { color: var(--color-surface) !important; }
+
+.payer-livraison {
+    background: var(--color-surface) !important;
+    border: 1px solid var(--color-border) !important;
+}
+
+.mobile-money {
+    background: var(--color-accent) !important;
+}
+
+.payer-livraison > a,
+.mobile-money > a { color: var(--color-primary) !important; }
+
+.text-mobile-money > h2,
+.p2-livr > h5 { color: var(--color-primary) !important; }
+
+.hero-mobile-money > .p1,
+.hero-PayerLivraison > .block3 > .p1 {
+    background: rgba(224, 166, 119, .16) !important;
+}
+
+.hero-visa,
+.input-item-visa {
+    border-color: var(--color-border) !important;
+    box-shadow: 0 4px 16px var(--color-shadow) !important;
+}
+
+.container-visa > .block2 > .attention {
+    background: var(--color-danger) !important;
+    color: var(--color-surface) !important;
+}
+
+.nouveaute-card:focus-visible,
+.nouveaute-cards:focus-visible,
+.nouveaute-next:focus-visible,
+.promotion-container :is(button, a):focus-visible {
+    outline-color: var(--color-accent) !important;
 }
 

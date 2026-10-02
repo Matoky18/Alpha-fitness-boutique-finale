@@ -3,7 +3,7 @@
     flex-direction: column;
     font-family: "inter" ,serif;
     position: fixed;
-    background: rgba(223, 165, 116, .2);
+    background: rgba(224, 166, 119, .18);
     justify-content: space-between;
     top: 88px;
     right: 0;
@@ -11,8 +11,8 @@
     height: auto;
     border-radius: 18px 0 0 18px;
     overflow: hidden;
-    border: 1px solid rgba(55, 52, 47, .1);
-    box-shadow: 0 8px 24px rgba(38, 35, 31, .14);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 8px 24px var(--color-shadow);
     width: 150px;
    
    
@@ -72,7 +72,7 @@
     
     font-size: 18px;
     font-weight: bold;
-    color: #a9683f;
+    color: var(--color-primary);
 }
  
 .trash-icon {

@@ -9,7 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.096);
+    box-shadow: 0 2px 8px var(--color-shadow);
     
 
 }
@@ -104,14 +104,13 @@ a {
 
 /* Palette brun, caramel et crème */
 .UnProduit-container {
-    border: 1px solid rgba(55, 52, 47, .1);
+    border: 1px solid var(--color-border);
     border-radius: 14px;
-    background-color: #fffaf5;
-    background-blend-mode: multiply;
-    box-shadow: 0 8px 24px rgba(38, 35, 31, .08);
+    background-color: var(--color-surface);
+    box-shadow: 0 8px 24px var(--color-shadow);
 }
 
-.nom-produit { color: #8d5534; }
+.nom-produit { color: var(--color-primary); }
 .imageProduit { border-radius: 13px; }
 .like {
     filter: brightness(0) saturate(100%) invert(37%) sepia(22%) saturate(1450%) hue-rotate(337deg) brightness(92%);

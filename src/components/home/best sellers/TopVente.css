@@ -21,7 +21,7 @@
     
    
     
-    background-image: url('../../../assets/produit-img/debardeurbleu.png');
+    background-image: url('../../../assets/produit-img/transparent/debardeurbleu.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -36,7 +36,7 @@
 .right-side {
    
    
-    background-image: url('../../../assets/produit-img/casquettenoirehomme.png');
+    background-image: url('../../../assets/produit-img/transparent/casquettenoirehomme.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -52,7 +52,7 @@
     width: 100%;
     height: 80vh;
     
-    background-image: url('../../../assets/produit-img/protmod.png');
+    background-image: url('../../../assets/produit-img/transparent/protmod.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;

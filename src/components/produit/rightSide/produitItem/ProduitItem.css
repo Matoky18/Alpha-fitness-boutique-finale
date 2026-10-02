@@ -5,12 +5,11 @@
     box-sizing: border-box;
     padding: 5px;
     border-radius: 7px;
-    mix-blend-mode: multiply;
 
 }
 
 .container-produitItem > .itemProduit {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.137);
+    border-bottom: 2px solid var(--color-border);
 }
 
 .itemProduit > .details {

@@ -15,7 +15,7 @@
 }
 
 .panier-vide-container > .text-panier-vide> h1 {
-    color: #26231f;
+    color: var(--color-primary);
     font-family: "inter" , serif;
     text-align: center;
     font-size: 1.5rem;
@@ -25,7 +25,7 @@
 .panier-vide-container > .text-panier-vide > h3 {
     font-family: "Inclusive Sans";
     font-weight: 400;
-    color: #5f554e;
+    color: var(--color-text-secondary);
     text-align: center;
 }
 
@@ -38,14 +38,14 @@
 .bouton-panier-vide {
     border-radius: 5px;
     color: var(--bleu-nuit);
-    background: rgba(66, 153, 204, 0.28);
+    background: rgba(224, 166, 119, .22);
     font-family: "Comic Neue";
     font-size: 1rem;
     padding-inline: 25px;
     margin-inline: 25px ;
     min-height: 50px;
     margin-top: 25px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 12px var(--color-shadow);
 }
 
 .bouton-panier-vide:hover {

@@ -1,13 +1,13 @@
 .container-home {
-    --bleu-nuit: #26231f;
-    --bleu-profond: #37342f;
-    --bleu-principal: #dfa574;
-    --bleu-doux: #dfa574;
-    --bleu-clair: #f3e8de;
-    --bleu-glace: #f3e8de;
-    --blanc: #fffaf5;
-    --texte: #26231f;
-    --accent: #dfa574;
+    --bleu-nuit: var(--color-primary);
+    --bleu-profond: var(--color-primary);
+    --bleu-principal: var(--color-accent);
+    --bleu-doux: var(--color-accent);
+    --bleu-clair: var(--color-bg);
+    --bleu-glace: var(--color-bg);
+    --blanc: var(--color-surface);
+    --texte: var(--color-text);
+    --accent: var(--color-accent);
     --font-display: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'Montserrat', Arial, sans-serif;
     display: flex;

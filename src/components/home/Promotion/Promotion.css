@@ -3,7 +3,7 @@
     width: 100%;
     min-width: 0;
     padding: 64px 24px;
-    background: #26231f;
+    background: var(--color-primary);
     font-family: var(--font-body);
 }
 
@@ -29,8 +29,8 @@
     align-items: center;
     justify-content: center;
     padding: 48px;
-    color: #26231f;
-    background: #e8d7c9;
+    color: var(--color-text);
+    background: var(--color-bg);
 }
 
 .promotion-eyebrow {
@@ -39,7 +39,7 @@
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 2.5px;
-    color: #6c6058;
+    color: var(--color-text-secondary);
 }
 
 .promotion-copy h2 {
@@ -54,7 +54,7 @@
 .promotion-discount {
     margin: 12px 0;
     width: fit-content;
-    background: linear-gradient(120deg, #26231f, #37342f 60%, #6c5140);
+    background: var(--color-primary);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -72,7 +72,7 @@
 /* Style de la phrase de présentation */
 .promotion-intro {
     max-width: 330px;
-    color: #6c6058;
+    color: var(--color-text-secondary);
     font-size: 14px;
     line-height: 1.7;
 }
@@ -82,13 +82,13 @@
     width: 100%;
     margin-top: 26px;
     padding-top: 22px;
-    border-top: 1px solid #26231f24;
+    border-top: 1px solid var(--color-border);
     min-height: 127px;
     animation: promotion-reveal .35s ease;
 }
 
 .promotion-category {
-    color: #9a603c;
+    color: var(--color-primary);
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -103,7 +103,7 @@
 }
 
 .promotion-product p {
-    color: #5f554e;
+    color: var(--color-text-secondary);
     font-size: 12px;
     line-height: 1.7;
 }
@@ -116,12 +116,12 @@
     margin-top: 26px;
     padding: 15px 23px;
     border-radius: 30px;
-    background: #dfa574;
-    color: #26231f;
+    background: var(--color-accent);
+    color: var(--color-primary);
     text-decoration: none;
     font-size: 13px;
     font-weight: 700;
-    box-shadow: 0 8px 24px #dfa57440;
+    box-shadow: 0 8px 24px rgba(224, 166, 119, .28);
     transition: background .2s, transform .2s;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .promotion-cta:hover {
-    background: #c98d5d;
+    background: var(--color-accent-hover);
     transform: translateY(-2px);
 }
 
@@ -164,7 +164,7 @@
     font-size: 9px;
     letter-spacing: 2px;
     font-weight: 700;
-    color: #6c6058;
+    color: var(--color-text-secondary);
 }
 
 /* Disposition de la navigation sous la bannière */
@@ -182,17 +182,17 @@
     place-items: center;
     width: 44px;
     height: 44px;
-    border: 1px solid #26231f26;
+    border: 1px solid var(--color-border);
     border-radius: 50%;
-    background: #fffaf5;
-    color: #26231f;
+    background: var(--color-surface);
+    color: var(--color-primary);
     font-size: 22px;
     cursor: pointer;
 }
 
 .promotion-arrow:hover {
-    background: #37342f;
-    color: #fffaf5;
+    background: var(--color-primary);
+    color: var(--color-surface);
 }
 
 /* Style des petits indicateurs et de l'offre active */
@@ -216,18 +216,18 @@
     width: 7px;
     height: 7px;
     border-radius: 10px;
-    background: #9b8d83;
+    background: var(--color-text-secondary);
     transition: width .2s;
 }
 
 .promotion-dot.is-active::after {
     width: 22px;
-    background: #dfa574;
+    background: var(--color-accent);
 }
 
 /* Contour des boutons et liens sélectionnés au clavier */
 .promotion-container :is(button, a):focus-visible {
-    outline: 3px solid #dfa574;
+    outline: 3px solid var(--color-accent);
     outline-offset: 4px;
 }
 

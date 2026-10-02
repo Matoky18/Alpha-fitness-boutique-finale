@@ -35,8 +35,8 @@
     width: 12vw;
     left: 10vw;
     gap : 150px;
-    background: rgba(223, 165, 116, .08);
-    border: 1px solid rgba(55, 52, 47, .08);
+    background: rgba(224, 166, 119, .14);
+    border: 1px solid var(--color-border);
     border-radius: 18px;
     /* display: none; */
 
@@ -88,8 +88,7 @@
        border-top-left-radius: 18px;
        /* border-top: 2px rgba(0, 0, 0, 0.658) solid;
        border-left: 2px rgba(0, 0, 0, 0.39) solid; */
-       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35),
-       4px 0px 4px rgba(0, 0, 0, 0.35);
+       box-shadow: 0 8px 24px var(--color-shadow);
 
     }
 

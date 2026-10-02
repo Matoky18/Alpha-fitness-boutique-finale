@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ProduitContext } from '../../../assets/Context/ProduitContext'
-import barresPompesPromotion from '../../../assets/produit-img/barres-pompes-promotion.png'
-import halteresPromotion from '../../../assets/produit-img/halteres-promotion.png'
+import barresPompesPromotion from '../../../assets/produit-img/transparent/barres-pompes-promotion.png'
+import halteresPromotion from '../../../assets/produit-img/transparent/halteres-promotion.png'
 import './Promotion.css'
 
 const Promotion = () => {
@@ -73,4 +73,3 @@ const Promotion = () => {
 }
 
 export default Promotion
-

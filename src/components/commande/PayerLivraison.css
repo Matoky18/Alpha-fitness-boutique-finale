@@ -94,7 +94,7 @@
 
 .hero-PayerLivraison > .block3 > .p1 {
     width: 100%;
-    background: rgba(66, 153, 204, 0.18);
+    background: rgba(224, 166, 119, .16);
     color: var(--danger);
     font-family: "Montserrat" , serif;
     font-size: 15px;

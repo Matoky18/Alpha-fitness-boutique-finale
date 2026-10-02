@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local product-photo processing environment and model cache
+.venv-cutout/
+.cache-cutout/
+output/cutout-review/
+scripts/__pycache__/

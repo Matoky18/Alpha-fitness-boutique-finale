@@ -25,10 +25,10 @@
     min-width: 250px;
     margin-top: 15%;
     /* background: red; */
-    background: rgba(66, 153, 204, 0.32);
+    background: rgba(255, 255, 255, .1);
     border-radius: 15px;
     border: 1px solid var(--blanc);
-    box-shadow: 1px 1px 10px rgba(252, 248, 251, 0.98);
+    box-shadow: 0 12px 32px rgba(38, 35, 31, .28);
 }
 
 .signUp {

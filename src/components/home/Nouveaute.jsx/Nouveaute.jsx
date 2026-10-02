@@ -1,9 +1,9 @@
 import { forwardRef, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import './Nouveaute.css'
-import motionWear from '../../../assets/produit-img/new1.png'
-import muscleMax from '../../../assets/produit-img/new2.png'
-import powerGrip from '../../../assets/produit-img/new3.png'
+import motionWear from '../../../assets/produit-img/transparent/new1.png'
+import muscleMax from '../../../assets/produit-img/transparent/new2.png'
+import powerGrip from '../../../assets/produit-img/transparent/new3.png'
 
 const selections = [
   { id: 'sweat001', name: 'MotionWear', category: 'Vêtements', description: 'Votre prochain essentiel pour l’entraînement.', image: motionWear },
